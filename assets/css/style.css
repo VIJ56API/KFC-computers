@@ -1,8 +1,8 @@
-/* LIT COMPUTERS E-COMMERCE DESIGN SYSTEM - ULTRA-CLEAR HIGH VISIBILITY LIGHT THEME */
+/* LIT & KFC COMPUTERS DESIGN SYSTEM - ULTRA-CLEAR HIGH VISIBILITY (SOLID BLACK TEXT EVERYWHERE) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap');
 
 :root {
-  --bg-dark: #f1f5f9;        /* Off-white crisp background */
+  --bg-dark: #f1f5f9;        /* Off-white canvas background */
   --bg-card: #ffffff;        /* Pure White Cards */
   --bg-card-hover: #f8fafc;  /* Subtle hover */
   --bg-surface: #ffffff;     /* Input and surface background */
@@ -19,8 +19,8 @@
   --accent-red: #dc2626;
 
   --text-main: #000000;      /* Pure High-Contrast Black Text */
-  --text-muted: #1e293b;     /* Dark Slate Text */
-  --text-dim: #334155;       /* Dark Muted Text */
+  --text-muted: #000000;     /* Solid Black Text */
+  --text-dim: #000000;       /* Solid Black Text */
 
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -40,35 +40,39 @@
 body {
   font-family: var(--font-body);
   background-color: var(--bg-dark);
-  color: var(--text-main);
+  color: #000000 !important;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Typography - Ultra Clear & Bold */
+/* Typography - Ultra Clear & Bold Black */
+h1, h2, h3, h4, h5, h6, p, span, div, label, li, a, td, th, input, select, button, textarea {
+  color: #000000 !important;
+  font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: #000000;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.01em;
 }
 
 a {
-  color: var(--primary-blue);
+  color: #000000 !important;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.2s ease;
 }
 a:hover {
-  color: var(--accent-gold-dark);
+  color: var(--accent-gold-dark) !important;
 }
 
-/* Clear Solid Accent Text */
+/* Solid Golden Title Accent */
 .gradient-text {
-  color: var(--accent-gold);
-  font-weight: 800;
+  color: var(--accent-gold) !important;
+  font-weight: 900;
 }
 
 /* Header Navbar - Pure White with Clear Border */
@@ -98,18 +102,19 @@ a:hover {
   font-family: var(--font-heading);
   font-size: 1.7rem;
   font-weight: 900;
-  color: #000000;
+  color: #000000 !important;
 }
 .logo span {
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
 }
 .logo-badge {
-  background: var(--primary-blue);
-  color: #ffffff;
-  font-size: 0.72rem;
-  font-weight: 800;
+  background: #bae6fd;
+  color: #000000 !important;
+  font-size: 0.75rem;
+  font-weight: 900;
   padding: 3px 8px;
   border-radius: 4px;
+  border: 1.5px solid #0284c7;
   text-transform: uppercase;
 }
 
@@ -124,8 +129,8 @@ a:hover {
   background: #ffffff;
   border: 2px solid #94a3b8;
   border-radius: 30px;
-  color: #000000;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
   font-size: 0.92rem;
   transition: all 0.2s ease;
 }
@@ -139,7 +144,7 @@ a:hover {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #334155;
+  color: #000000 !important;
   font-size: 1.1rem;
 }
 
@@ -150,12 +155,12 @@ a:hover {
   list-style: none;
 }
 .nav-links a {
-  color: #000000;
-  font-weight: 700;
+  color: #000000 !important;
+  font-weight: 800;
   font-size: 0.98rem;
 }
 .nav-links a:hover, .nav-links a.active {
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
 }
 
 .cart-btn {
@@ -167,23 +172,24 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .cart-badge {
-  background: var(--accent-gold);
-  color: #ffffff;
+  background: #fde68a;
+  color: #000000 !important;
+  border: 1.5px solid #d97706;
   font-size: 0.8rem;
   font-weight: 900;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Buttons - Solid High Contrast */
+/* Buttons - Solid High Contrast with BLACK Font */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -191,53 +197,59 @@ a:hover {
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: var(--radius);
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
   font-family: var(--font-body);
+  color: #000000 !important;
 }
 
 .btn-primary {
-  background: var(--accent-gold);
-  color: #ffffff;
+  background: #fde68a;
+  color: #000000 !important;
+  border: 2px solid #d97706;
+  font-weight: 900;
   box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25);
 }
 .btn-primary:hover {
-  background: var(--accent-gold-dark);
-  color: #ffffff;
+  background: #fcd34d;
+  color: #000000 !important;
 }
 
 .btn-outline {
   background: #ffffff;
   border: 2px solid var(--primary-blue);
-  color: var(--primary-blue);
-  font-weight: 700;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .btn-outline:hover {
-  background: var(--primary-blue);
-  color: #ffffff;
+  background: #e0f2fe;
+  color: #000000 !important;
 }
 
 .btn-secondary {
   background: #ffffff;
-  color: #000000;
+  color: #000000 !important;
   border: 2px solid #cbd5e1;
-  font-weight: 700;
+  font-weight: 800;
 }
 .btn-secondary:hover {
   background: #f1f5f9;
   border-color: #94a3b8;
+  color: #000000 !important;
 }
 
 .btn-danger {
-  background: var(--accent-red);
-  color: #ffffff;
-  font-weight: 700;
+  background: #fecaca;
+  color: #000000 !important;
+  border: 2px solid #dc2626;
+  font-weight: 900;
 }
 .btn-danger:hover {
-  background: #b91c1c;
+  background: #fca5a5;
+  color: #000000 !important;
 }
 
 .btn-sm {
@@ -258,7 +270,7 @@ a:hover {
   flex: 1;
 }
 
-/* Hero Section - Soft Light Blue Frame */
+/* Hero Section */
 .hero {
   background: #e0f2fe;
   border: 2px solid #7dd3fc;
@@ -275,14 +287,14 @@ a:hover {
   font-size: 2.8rem;
   line-height: 1.18;
   margin-bottom: 1rem;
-  color: #000000;
+  color: #000000 !important;
   font-weight: 900;
 }
 .hero-content p {
-  color: #0f172a;
+  color: #000000 !important;
   font-size: 1.08rem;
   margin-bottom: 2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .hero-stats {
   display: flex;
@@ -291,13 +303,13 @@ a:hover {
 }
 .stat-item h4 {
   font-size: 1.9rem;
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
   font-weight: 900;
 }
 .stat-item p {
   font-size: 0.88rem;
-  color: #000000;
-  font-weight: 700;
+  color: #000000 !important;
+  font-weight: 800;
 }
 
 /* Feature Badges Bar */
@@ -319,17 +331,17 @@ a:hover {
 }
 .trust-icon {
   font-size: 2.2rem;
-  color: var(--primary-blue);
+  color: var(--primary-blue) !important;
 }
 .trust-card h4 {
   font-size: 0.98rem;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .trust-card p {
   font-size: 0.82rem;
-  color: #1e293b;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
 }
 
 /* Section Header */
@@ -341,13 +353,13 @@ a:hover {
 }
 .section-header h2 {
   font-size: 1.9rem;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .section-header p {
-  color: #1e293b;
+  color: #000000 !important;
   font-size: 0.98rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Product Cards Grid */
@@ -401,9 +413,9 @@ a:hover {
   left: 10px;
   background: #e0f2fe;
   border: 1.5px solid #7dd3fc;
-  color: var(--primary-blue);
+  color: #000000 !important;
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 900;
   padding: 3px 8px;
   border-radius: 4px;
 }
@@ -412,10 +424,10 @@ a:hover {
   top: 10px;
   right: 10px;
   background: #dcfce7;
-  color: var(--accent-green);
+  color: #000000 !important;
   border: 1.5px solid #86efac;
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 900;
   padding: 3px 8px;
   border-radius: 4px;
 }
@@ -430,20 +442,20 @@ a:hover {
   font-size: 1.15rem;
   margin-bottom: 0.4rem;
   line-height: 1.3;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .product-brand {
   font-size: 0.82rem;
-  color: #334155;
+  color: #000000 !important;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 0.5rem;
 }
 .product-desc {
   font-size: 0.88rem;
-  color: #000000;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
   margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -452,8 +464,8 @@ a:hover {
 }
 .product-specs-summary {
   font-size: 0.82rem;
-  color: #000000;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
   background: #f8fafc;
   border: 1.5px solid #cbd5e1;
   padding: 0.6rem;
@@ -474,7 +486,7 @@ a:hover {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 900;
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
 }
 .product-actions {
   display: flex;
@@ -503,8 +515,8 @@ a:hover {
 .filter-group h4 {
   font-size: 1rem;
   margin-bottom: 0.8rem;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.4rem;
 }
@@ -513,8 +525,8 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: #000000;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
@@ -526,8 +538,8 @@ a:hover {
   background: #ffffff;
   border: 2px solid #94a3b8;
   border-radius: var(--radius-sm);
-  color: #000000;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
   font-size: 0.88rem;
 }
 .price-inputs {
@@ -552,18 +564,18 @@ a:hover {
 .tab-btn {
   background: #ffffff;
   border: 2px solid #cbd5e1;
-  color: #000000;
+  color: #000000 !important;
   padding: 0.55rem 1.1rem;
   border-radius: 20px;
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease;
 }
 .tab-btn:hover, .tab-btn.active {
-  background: var(--primary-blue);
-  color: #ffffff;
+  background: #bae6fd;
+  color: #000000 !important;
   border-color: var(--primary-blue);
 }
 
@@ -581,8 +593,8 @@ a:hover {
   margin-bottom: 1rem;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .build-item-list {
   list-style: none;
@@ -599,8 +611,8 @@ a:hover {
   font-size: 0.88rem;
 }
 .build-item-name {
-  font-weight: 800;
-  color: #000000;
+  font-weight: 900;
+  color: #000000 !important;
   max-width: 180px;
   white-space: nowrap;
   overflow: hidden;
@@ -608,23 +620,23 @@ a:hover {
 }
 .build-item-category {
   font-size: 0.75rem;
-  color: #334155;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
 }
 .compatibility-box {
   background: #fef3c7;
   border: 2px solid #fcd34d;
-  color: #92400e;
+  color: #000000 !important;
   padding: 0.85rem;
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
   margin-bottom: 1rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .compatibility-box.ok {
   background: #dcfce7;
   border-color: #86efac;
-  color: #14532d;
+  color: #000000 !important;
 }
 
 /* Forms (Login/Register/Checkout/Admin) */
@@ -643,9 +655,9 @@ a:hover {
 .form-group label {
   display: block;
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 0.4rem;
-  color: #000000;
+  color: #000000 !important;
 }
 .form-control {
   width: 100%;
@@ -653,8 +665,8 @@ a:hover {
   background: #ffffff;
   border: 2px solid #94a3b8;
   border-radius: var(--radius-sm);
-  color: #000000;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 700;
   font-size: 0.92rem;
   transition: border-color 0.2s ease;
 }
@@ -680,17 +692,17 @@ a:hover {
 }
 .admin-table th {
   background: #f8fafc;
-  color: #000000;
+  color: #000000 !important;
   padding: 1rem;
-  font-weight: 800;
+  font-weight: 900;
   border-bottom: 2px solid #cbd5e1;
 }
 .admin-table td {
   padding: 0.95rem 1rem;
   border-bottom: 1px solid #e2e8f0;
   vertical-align: middle;
-  color: #000000;
-  font-weight: 500;
+  color: #000000 !important;
+  font-weight: 700;
 }
 .admin-table tr:hover {
   background: #f8fafc;
@@ -723,8 +735,8 @@ footer {
 .footer-col h4 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #000000;
-  font-weight: 800;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .footer-col ul {
   list-style: none;
@@ -733,12 +745,12 @@ footer {
   margin-bottom: 0.5rem;
 }
 .footer-col a {
-  color: #000000;
+  color: #000000 !important;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .footer-col a:hover {
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
 }
 .footer-bottom {
   max-width: 1300px;
@@ -746,9 +758,9 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   border-top: 1px solid #e2e8f0;
-  color: #000000;
+  color: #000000 !important;
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Responsive adjustments */
