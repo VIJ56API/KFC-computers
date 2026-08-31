@@ -65,7 +65,7 @@ function getNextId() {
 // Add New Product or Component
 function addCatalogItem($data, $fileInput = null) {
     $id = getNextId();
-    $imagePath = 'assets/images/products/starter-gaming-pc.svg'; // fallback default
+    $imagePath = 'assets/images/products/starter-gaming-pc.png'; // fallback default
 
     if ($fileInput && isset($fileInput['name']) && $fileInput['error'] === UPLOAD_ERR_OK) {
         $uploaded = handleImageUpload($fileInput);

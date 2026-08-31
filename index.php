@@ -44,7 +44,7 @@ $featuredComponents = array_slice($components, 0, 8);
     </div>
 
     <div style="text-align: center;">
-      <img src="assets/images/products/ultimate-gaming-pc.svg" alt="KFC Ultimate Gaming PC" style="max-width: 100%;">
+      <img src="assets/images/products/ultimate-gaming-pc.png" alt="KFC Ultimate Gaming PC" style="max-width: 100%;">
     </div>
   </section>
 

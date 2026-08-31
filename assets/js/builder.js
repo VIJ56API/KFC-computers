@@ -201,7 +201,7 @@ function confirmCustomBuild() {
         name: 'Custom KFC Gaming Build',
         category: 'Custom PC',
         price: buildPrice,
-        image: 'assets/images/products/ultimate-gaming-pc.svg',
+        image: 'assets/images/products/ultimate-gaming-pc.png',
         short_description: selectedList.map(i => `${i.category}: ${i.name}`).join(' | '),
         specifications: selectedList.map(i => `${i.category}: ${i.name} (₹${Number(i.price).toLocaleString('en-IN')})`).join('\n'),
         qty: 1
