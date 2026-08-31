@@ -19,9 +19,9 @@
   --accent-green: #15803d;
   --accent-red: #dc2626;
 
-  --text-main: #0f172a;      /* Dark Charcoal Main Text */
-  --text-muted: #334155;     /* Dark Slate Subtext */
-  --text-dim: #64748b;       /* Muted Text */
+  --text-main: #000000;      /* Solid Black Main Text */
+  --text-muted: #1e293b;     /* Dark Slate Subtext */
+  --text-dim: #475569;       /* Dark Muted Text */
 
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -51,7 +51,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--text-main);
+  color: #000000;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
@@ -98,7 +98,7 @@ a:hover {
   font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--text-main);
+  color: #000000;
 }
 .logo span {
   color: var(--accent-gold);
@@ -124,7 +124,8 @@ a:hover {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: 30px;
-  color: var(--text-main);
+  color: #000000;
+  font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.3s ease;
 }
@@ -149,7 +150,7 @@ a:hover {
   list-style: none;
 }
 .nav-links a {
-  color: var(--text-muted);
+  color: #000000;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -166,8 +167,8 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-main);
-  font-weight: 600;
+  color: #000000;
+  font-weight: 700;
 }
 .cart-badge {
   background: var(--accent-gold);
@@ -219,8 +220,9 @@ a:hover {
 
 .btn-secondary {
   background: var(--bg-surface);
-  color: var(--text-main);
+  color: #000000;
   border: 1px solid var(--border-color);
+  font-weight: 600;
 }
 .btn-secondary:hover {
   background: #e2e8f0;
@@ -269,12 +271,13 @@ a:hover {
   font-size: 2.8rem;
   line-height: 1.18;
   margin-bottom: 1rem;
-  color: #0f172a;
+  color: #000000;
 }
 .hero-content p {
-  color: #334155;
+  color: #000000;
   font-size: 1.05rem;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .hero-stats {
   display: flex;
@@ -287,7 +290,8 @@ a:hover {
 }
 .stat-item p {
   font-size: 0.85rem;
-  color: var(--text-dim);
+  color: #000000;
+  font-weight: 600;
 }
 
 /* Feature Badges Bar */
@@ -313,10 +317,11 @@ a:hover {
 }
 .trust-card h4 {
   font-size: 0.95rem;
+  color: #000000;
 }
 .trust-card p {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #000000;
 }
 
 /* Section Header */
@@ -328,10 +333,12 @@ a:hover {
 }
 .section-header h2 {
   font-size: 1.8rem;
+  color: #000000;
 }
 .section-header p {
-  color: var(--text-muted);
+  color: #000000;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 /* Product Cards Grid */
@@ -413,17 +420,20 @@ a:hover {
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
   line-height: 1.3;
+  color: #000000;
+  font-weight: 700;
 }
 .product-brand {
   font-size: 0.8rem;
   color: var(--text-dim);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .product-desc {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.88rem;
+  color: #000000;
+  font-weight: 500;
   margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -431,10 +441,12 @@ a:hover {
   overflow: hidden;
 }
 .product-specs-summary {
-  font-size: 0.78rem;
-  color: var(--text-muted);
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 600;
   background: var(--bg-surface);
-  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 0.7rem;
   border-radius: var(--radius-sm);
   margin-bottom: 1rem;
   white-space: pre-line;
@@ -481,7 +493,7 @@ a:hover {
 .filter-group h4 {
   font-size: 0.95rem;
   margin-bottom: 0.8rem;
-  color: var(--text-main);
+  color: #000000;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.4rem;
 }
@@ -490,7 +502,8 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.88rem;
-  color: var(--text-muted);
+  color: #000000;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
@@ -502,7 +515,8 @@ a:hover {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  color: var(--text-main);
+  color: #000000;
+  font-weight: 500;
   font-size: 0.85rem;
 }
 .price-inputs {
@@ -527,7 +541,7 @@ a:hover {
 .tab-btn {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  color: var(--text-muted);
+  color: #000000;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -556,6 +570,7 @@ a:hover {
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.5rem;
+  color: #000000;
 }
 .build-item-list {
   list-style: none;
@@ -572,8 +587,8 @@ a:hover {
   font-size: 0.85rem;
 }
 .build-item-name {
-  font-weight: 600;
-  color: var(--text-main);
+  font-weight: 700;
+  color: #000000;
   max-width: 180px;
   white-space: nowrap;
   overflow: hidden;
@@ -591,6 +606,7 @@ a:hover {
   border-radius: var(--radius-sm);
   font-size: 0.82rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 .compatibility-box.ok {
   background: #dcfce7;
@@ -614,9 +630,9 @@ a:hover {
 .form-group label {
   display: block;
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.4rem;
-  color: var(--text-muted);
+  color: #000000;
 }
 .form-control {
   width: 100%;
@@ -624,7 +640,8 @@ a:hover {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  color: var(--text-main);
+  color: #000000;
+  font-weight: 500;
   font-size: 0.9rem;
   transition: border-color 0.2s ease;
 }
@@ -650,7 +667,7 @@ a:hover {
 }
 .admin-table th {
   background: var(--bg-surface);
-  color: var(--text-muted);
+  color: #000000;
   padding: 1rem;
   font-weight: 700;
   border-bottom: 1px solid var(--border-color);
@@ -659,6 +676,7 @@ a:hover {
   padding: 0.9rem 1rem;
   border-bottom: 1px solid var(--border-color);
   vertical-align: middle;
+  color: #000000;
 }
 .admin-table tr:hover {
   background: var(--bg-card-hover);
@@ -690,7 +708,7 @@ footer {
 .footer-col h4 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: var(--text-main);
+  color: #000000;
 }
 .footer-col ul {
   list-style: none;
@@ -699,8 +717,9 @@ footer {
   margin-bottom: 0.5rem;
 }
 .footer-col a {
-  color: var(--text-muted);
+  color: #000000;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 .footer-col a:hover {
   color: var(--accent-gold);
@@ -711,8 +730,9 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-color);
-  color: var(--text-dim);
+  color: #000000;
   font-size: 0.85rem;
+  font-weight: 500;
 }
 
 /* Responsive adjustments */
