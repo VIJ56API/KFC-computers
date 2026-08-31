@@ -1,5 +1,5 @@
 <?php
-// Product & Component JSON Data Manager
+// Product & Component JSON Data Manager - KFC Computers
 
 define('PRODUCTS_FILE', __DIR__ . '/../data/products.json');
 define('COMPONENTS_FILE', __DIR__ . '/../data/components.json');
@@ -84,7 +84,7 @@ function addCatalogItem($data, $fileInput = null) {
             'id' => $id,
             'name' => trim($data['name']),
             'category' => 'Ready-Made PC',
-            'brand' => !empty($data['brand']) ? trim($data['brand']) : 'LIT Computers',
+            'brand' => !empty($data['brand']) ? trim($data['brand']) : 'KFC Computers',
             'price' => (float)$data['price'],
             'image' => $imagePath,
             'short_description' => trim($data['short_description'] ?? ''),
@@ -107,7 +107,7 @@ function addCatalogItem($data, $fileInput = null) {
             'id' => $id,
             'name' => trim($data['name']),
             'category' => trim($data['category']),
-            'brand' => !empty($data['brand']) ? trim($data['brand']) : 'LIT Computers',
+            'brand' => !empty($data['brand']) ? trim($data['brand']) : 'KFC Computers',
             'price' => (float)$data['price'],
             'image' => $imagePath,
             'specifications' => trim($data['specifications'] ?? ''),

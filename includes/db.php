@@ -1,6 +1,5 @@
 <?php
-// Database management helper for LIT Computers (Users, Auth, Orders)
-// Uses SQLite by default for zero-config execution, with MySQL fallback support.
+// Database management helper for KFC Computers (Users, Auth, Orders)
 
 $dbDir = __DIR__ . '/../database';
 if (!is_dir($dbDir)) {
@@ -30,7 +29,7 @@ try {
     $stmt->execute();
     if ($stmt->fetchColumn() == 0) {
         $adminPass = password_hash('admin123', PASSWORD_DEFAULT);
-        $stmt = $pdo->prepare("INSERT INTO users (name, email, password, role) VALUES ('LIT Admin', 'admin@litcomputers.in', ?, 'admin')");
+        $stmt = $pdo->prepare("INSERT INTO users (name, email, password, role) VALUES ('KFC Admin', 'admin@litcomputers.in', ?, 'admin')");
         $stmt->execute([$adminPass]);
     }
 

@@ -46,14 +46,14 @@ require_once __DIR__ . '/includes/header.php';
 <div class="container">
   <div class="form-card">
     <div style="text-align: center; margin-bottom: 2rem;">
-      <h2 style="font-size: 2rem;">Sign In to <span class="gradient-text">LIT Computers</span></h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">
+      <h2 style="font-size: 2rem; color: #000000; font-weight: 900;">Sign In to <span class="gradient-text">KFC Computers</span></h2>
+      <p style="color: #000000; font-size: 0.95rem; margin-top: 0.4rem; font-weight: 600;">
         Log in to save custom PC builds and complete your orders.
       </p>
     </div>
 
     <?php if (!empty($error)): ?>
-      <div style="background: rgba(239,68,68,0.15); border: 1px solid var(--accent-red); color: var(--accent-red); padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.88rem; margin-bottom: 1.2rem;">
+      <div style="background: #fee2e2; border: 2px solid var(--accent-red); color: var(--accent-red); padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.88rem; margin-bottom: 1.2rem; font-weight: 700;">
         <?= htmlspecialchars($error) ?>
       </div>
     <?php endif; ?>
@@ -74,11 +74,11 @@ require_once __DIR__ . '/includes/header.php';
       </button>
     </form>
 
-    <div style="margin-top: 1.8rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+    <div style="margin-top: 1.8rem; text-align: center; font-size: 0.9rem; color: #000000; font-weight: 600;">
       Don't have an account? <a href="register.php?redirect=<?= urlencode($redirect) ?>">Create New Account</a>
     </div>
 
-    <div style="margin-top: 1.5rem; background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.8rem; color: var(--text-dim); border: 1px dashed var(--border-color);">
+    <div style="margin-top: 1.5rem; background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; color: #000000; font-weight: 600; border: 2px dashed #cbd5e1;">
       <strong>Demo Accounts:</strong><br>
       Admin: <code>admin@litcomputers.in</code> / <code>admin123</code><br>
       Customer: Create a new account or sign up below.

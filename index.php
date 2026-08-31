@@ -11,10 +11,10 @@ $featuredComponents = array_slice($components, 0, 8);
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <span style="color: var(--primary-cyan); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px;">
+      <span style="color: var(--primary-blue); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px;">
         🔥 Next-Gen PC Building
       </span>
-      <h1>DOMINATE WITH <span class="gradient-text">LIT COMPUTERS</span></h1>
+      <h1>DOMINATE WITH <span class="gradient-text">KFC COMPUTERS</span></h1>
       <p>
         Pre-built gaming beasts & custom PC configurations powered by NVIDIA RTX, AMD Ryzen, and Intel Core. Designed for gamers, creators, and professionals in India.
       </p>
@@ -44,7 +44,7 @@ $featuredComponents = array_slice($components, 0, 8);
     </div>
 
     <div style="text-align: center;">
-      <img src="assets/images/products/ultimate-gaming-pc.svg" alt="LIT Ultimate Gaming PC" style="max-width: 100%; filter: drop-shadow(0 0 25px rgba(0,242,254,0.3));">
+      <img src="assets/images/products/ultimate-gaming-pc.svg" alt="KFC Ultimate Gaming PC" style="max-width: 100%;">
     </div>
   </section>
 
@@ -100,7 +100,7 @@ $featuredComponents = array_slice($components, 0, 8);
           </div>
 
           <div class="product-info">
-            <div class="product-brand"><?= htmlspecialchars($p['brand'] ?? 'LIT Computers') ?></div>
+            <div class="product-brand"><?= htmlspecialchars($p['brand'] ?? 'KFC Computers') ?></div>
             <h3><?= htmlspecialchars($p['name']) ?></h3>
             <p class="product-desc"><?= htmlspecialchars($p['short_description']) ?></p>
             <div class="product-specs-summary"><?= htmlspecialchars($p['specifications']) ?></div>
@@ -148,7 +148,7 @@ $featuredComponents = array_slice($components, 0, 8);
           </div>
 
           <div class="product-info">
-            <div class="product-brand"><?= htmlspecialchars($c['brand'] ?? 'LIT') ?></div>
+            <div class="product-brand"><?= htmlspecialchars($c['brand'] ?? 'KFC') ?></div>
             <h3><?= htmlspecialchars($c['name']) ?></h3>
             <div class="product-specs-summary"><?= htmlspecialchars($c['specifications']) ?></div>
 

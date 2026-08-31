@@ -51,14 +51,14 @@ require_once __DIR__ . '/includes/header.php';
 <div class="container">
   <div class="form-card">
     <div style="text-align: center; margin-bottom: 2rem;">
-      <h2 style="font-size: 2rem;">Create Your Account</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">
-        Join LIT Computers to track orders and save builds.
+      <h2 style="font-size: 2rem; color: #000000; font-weight: 900;">Create Your Account</h2>
+      <p style="color: #000000; font-size: 0.95rem; margin-top: 0.4rem; font-weight: 600;">
+        Join KFC Computers to track orders and save custom PC builds.
       </p>
     </div>
 
     <?php if (!empty($error)): ?>
-      <div style="background: rgba(239,68,68,0.15); border: 1px solid var(--accent-red); color: var(--accent-red); padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.88rem; margin-bottom: 1.2rem;">
+      <div style="background: #fee2e2; border: 2px solid var(--accent-red); color: var(--accent-red); padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.88rem; margin-bottom: 1.2rem; font-weight: 700;">
         <?= htmlspecialchars($error) ?>
       </div>
     <?php endif; ?>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/header.php';
       </button>
     </form>
 
-    <div style="margin-top: 1.8rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+    <div style="margin-top: 1.8rem; text-align: center; font-size: 0.9rem; color: #000000; font-weight: 600;">
       Already have an account? <a href="login.php?redirect=<?= urlencode($redirect) ?>">Sign In</a>
     </div>
   </div>

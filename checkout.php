@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         $tax = round($subtotal * 0.18, 2);
         $total = $subtotal + $tax;
-        $orderNum = 'LIT-' . date('Ymd') . '-' . rand(1000, 9999);
+        $orderNum = 'KFC-' . date('Ymd') . '-' . rand(1000, 9999);
 
         try {
             $pdo = getDb();
@@ -97,11 +97,11 @@ require_once __DIR__ . '/includes/header.php';
 <div class="container">
   <div style="margin-bottom: 2rem;">
     <h2>Order <span class="gradient-text">Checkout</span></h2>
-    <p style="color: var(--text-muted);">Enter shipping destination and complete your purchase securely.</p>
+    <p style="color: #000000; font-weight: 500;">Enter shipping destination and complete your purchase securely.</p>
   </div>
 
   <?php if (!empty($error)): ?>
-    <div style="background: rgba(239,68,68,0.15); border: 1px solid var(--accent-red); color: var(--accent-red); padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.88rem; margin-bottom: 1.5rem;">
+    <div style="background: #fee2e2; border: 2px solid var(--accent-red); color: var(--accent-red); padding: 0.8rem; border-radius: var(--radius-sm); font-size: 0.88rem; margin-bottom: 1.5rem; font-weight: 700;">
       <?= htmlspecialchars($error) ?>
     </div>
   <?php endif; ?>
@@ -111,9 +111,9 @@ require_once __DIR__ . '/includes/header.php';
 
     <div class="catalog-wrapper" style="grid-template-columns: 1fr 360px;">
       <!-- Left: Delivery Address & Payment Method -->
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 2rem;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
-          <i class="fa-solid fa-truck-ram" style="color: var(--primary-cyan);"></i> Delivery Address
+      <div style="background: var(--bg-card); border: 2px solid #cbd5e1; border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-card);">
+        <h3 style="font-size: 1.3rem; margin-bottom: 1.2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; color: #000000; font-weight: 800;">
+          <i class="fa-solid fa-truck-ram" style="color: var(--primary-blue);"></i> Delivery Address
         </h3>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
@@ -154,32 +154,32 @@ require_once __DIR__ . '/includes/header.php';
           </div>
         </div>
 
-        <h3 style="font-size: 1.3rem; margin: 1.8rem 0 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
-          <i class="fa-solid fa-credit-card" style="color: var(--primary-cyan);"></i> Payment Method
+        <h3 style="font-size: 1.3rem; margin: 1.8rem 0 1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; color: #000000; font-weight: 800;">
+          <i class="fa-solid fa-credit-card" style="color: var(--primary-blue);"></i> Payment Method
         </h3>
 
         <div style="display: flex; flex-direction: column; gap: 0.8rem;">
-          <label style="background: var(--bg-surface); padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 1rem;">
+          <label style="background: var(--bg-surface); padding: 1rem; border: 2px solid #cbd5e1; border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 1rem;">
             <input type="radio" name="payment_method" value="UPI / Instant QR Code" checked>
             <div>
-              <strong>UPI / Instant QR Code (GPay, PhonePe, Paytm)</strong>
-              <div style="font-size: 0.78rem; color: var(--text-muted);">Zero extra transaction fee • Instant Order Processing</div>
+              <strong style="color: #000000; font-weight: 800;">UPI / Instant QR Code (GPay, PhonePe, Paytm)</strong>
+              <div style="font-size: 0.8rem; color: #334155; font-weight: 600;">Zero extra transaction fee • Instant Order Processing</div>
             </div>
           </label>
 
-          <label style="background: var(--bg-surface); padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 1rem;">
+          <label style="background: var(--bg-surface); padding: 1rem; border: 2px solid #cbd5e1; border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 1rem;">
             <input type="radio" name="payment_method" value="Credit / Debit Card">
             <div>
-              <strong>Credit / Debit Card / NetBanking</strong>
-              <div style="font-size: 0.78rem; color: var(--text-muted);">Visa, MasterCard, RuPay, HDFC, ICICI, SBI</div>
+              <strong style="color: #000000; font-weight: 800;">Credit / Debit Card / NetBanking</strong>
+              <div style="font-size: 0.8rem; color: #334155; font-weight: 600;">Visa, MasterCard, RuPay, HDFC, ICICI, SBI</div>
             </div>
           </label>
 
-          <label style="background: var(--bg-surface); padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 1rem;">
+          <label style="background: var(--bg-surface); padding: 1rem; border: 2px solid #cbd5e1; border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 1rem;">
             <input type="radio" name="payment_method" value="Cash on Delivery (COD)">
             <div>
-              <strong>Cash on Delivery (COD)</strong>
-              <div style="font-size: 0.78rem; color: var(--text-muted);">Pay upon delivery at your doorstep</div>
+              <strong style="color: #000000; font-weight: 800;">Cash on Delivery (COD)</strong>
+              <div style="font-size: 0.8rem; color: #334155; font-weight: 600;">Pay upon delivery at your doorstep</div>
             </div>
           </label>
         </div>
@@ -194,23 +194,23 @@ require_once __DIR__ . '/includes/header.php';
             <!-- Populated via JS -->
           </div>
 
-          <div style="border-top: 1px dashed var(--border-color); padding-top: 1rem; font-size: 0.9rem;">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: var(--text-muted);">
+          <div style="border-top: 2px dashed #cbd5e1; padding-top: 1rem; font-size: 0.9rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #000000; font-weight: 600;">
               <span>Subtotal:</span>
-              <span id="checkout-subtotal" style="color: #fff;">₹0</span>
+              <span id="checkout-subtotal" style="color: #000; font-weight: 700;">₹0</span>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: var(--text-muted);">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #000000; font-weight: 600;">
               <span>GST (18%):</span>
-              <span id="checkout-tax" style="color: #fff;">₹0</span>
+              <span id="checkout-tax" style="color: #000; font-weight: 700;">₹0</span>
             </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--text-muted);">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: #000000; font-weight: 600;">
               <span>Express Shipping:</span>
-              <span style="color: var(--accent-green); font-weight: 700;">FREE</span>
+              <span style="color: var(--accent-green); font-weight: 800;">FREE</span>
             </div>
 
-            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 0.8rem; margin-bottom: 1.5rem;">
-              <span style="font-weight: 700; font-size: 1.1rem;">Total Payable:</span>
-              <strong id="checkout-grand-total" style="font-family: var(--font-heading); color: var(--primary-cyan); font-size: 1.6rem;">₹0</strong>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 2px solid #cbd5e1; padding-top: 0.8rem; margin-bottom: 1.5rem;">
+              <span style="font-weight: 800; font-size: 1.1rem; color: #000000;">Total Payable:</span>
+              <strong id="checkout-grand-total" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 1.6rem;">₹0</strong>
             </div>
           </div>
 
@@ -238,12 +238,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const itemTotal = Number(item.price) * (item.qty || 1);
         subtotal += itemTotal;
         return `
-            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.6rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 0.6rem;">
                 <div>
-                    <div style="font-weight: 600; color: #fff;">${item.name}</div>
-                    <div style="color: var(--text-dim); font-size: 0.75rem;">Qty: ${item.qty || 1}</div>
+                    <div style="font-weight: 800; color: #000;">${item.name}</div>
+                    <div style="color: #334155; font-size: 0.78rem; font-weight: 600;">Qty: ${item.qty || 1}</div>
                 </div>
-                <div style="font-weight: 700; color: var(--primary-cyan);">₹${itemTotal.toLocaleString('en-IN')}</div>
+                <div style="font-weight: 800; color: var(--accent-gold);">₹${itemTotal.toLocaleString('en-IN')}</div>
             </div>
         `;
     }).join('');

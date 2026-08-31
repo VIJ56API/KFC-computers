@@ -7,11 +7,11 @@ $components = getComponents();
 
 <div class="container">
   <div style="margin-bottom: 2rem; text-align: center;">
-    <span style="color: var(--primary-cyan); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px;">
+    <span style="color: var(--primary-blue); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px;">
       🛠️ Interactive PC Customizer
     </span>
-    <h1 style="font-size: 2.5rem;">CUSTOM <span class="gradient-text">PC BUILDER</span></h1>
-    <p style="color: var(--text-muted); max-width: 700px; margin: 0.5rem auto 0;">
+    <h1 style="font-size: 2.5rem; color: #000000; font-weight: 900;">CUSTOM <span class="gradient-text">PC BUILDER</span></h1>
+    <p style="color: #000000; max-width: 700px; margin: 0.5rem auto 0; font-weight: 600;">
       Select components across 12 hardware categories. Our intelligent system checks socket, RAM, and PSU power compatibility in real-time.
     </p>
   </div>
@@ -42,8 +42,8 @@ $components = getComponents();
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; font-size: 1.2rem;">
-          <span style="color: var(--text-muted);">Total Price:</span>
-          <strong id="build-total-price" style="font-family: var(--font-heading); color: var(--primary-cyan); font-size: 1.6rem;">₹0</strong>
+          <span style="color: #000000; font-weight: 700;">Total Price:</span>
+          <strong id="build-total-price" style="font-family: var(--font-heading); color: var(--accent-gold); font-size: 1.6rem;">₹0</strong>
         </div>
 
         <button id="confirm-build-btn" class="btn btn-primary btn-block" onclick="confirmCustomBuild()" disabled>

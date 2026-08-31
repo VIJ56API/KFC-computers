@@ -20,14 +20,14 @@ $allCategories = [
 $allBrands = [
     'AMD', 'NVIDIA', 'Intel', 'Corsair', 'Kingston', 
     'Samsung', 'MSI', 'Gigabyte', 'ASUS', 'DeepCool', 
-    'Seagate', 'Western Digital', 'LIT Computers'
+    'Seagate', 'Western Digital', 'KFC Computers'
 ];
 ?>
 
 <div class="container">
   <div style="margin-bottom: 2rem;">
     <h2>Product <span class="gradient-text">Catalog & Components</span></h2>
-    <p style="color: var(--text-muted);">Explore genuine hardware, custom parts, and pre-built gaming systems.</p>
+    <p style="color: #000000; font-weight: 500;">Explore genuine hardware, custom parts, and pre-built gaming systems.</p>
   </div>
 
   <div class="catalog-wrapper">
@@ -84,18 +84,18 @@ $allBrands = [
 
     <!-- Catalog Main Area -->
     <main>
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; background: var(--bg-card); padding: 0.8rem 1.2rem; border-radius: var(--radius); border: 1px solid var(--border-color);">
-        <div style="color: var(--text-muted); font-size: 0.9rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; background: var(--bg-card); padding: 0.8rem 1.2rem; border-radius: var(--radius); border: 2px solid #cbd5e1; box-shadow: var(--shadow-card);">
+        <div style="color: #000000; font-size: 0.95rem; font-weight: 700;">
           Showing <strong><?= count($items) ?></strong> products
           <?php if (!empty($searchQuery)): ?> for "<strong><?= htmlspecialchars($searchQuery) ?></strong>"<?php endif; ?>
         </div>
       </div>
 
       <?php if (count($items) === 0): ?>
-        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 3rem; text-align: center;">
-          <i class="fa-solid fa-box-open" style="font-size: 3rem; color: var(--text-dim); margin-bottom: 1rem;"></i>
-          <h3>No matching products found</h3>
-          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Try adjusting your search terms or clearing your filter selections.</p>
+        <div style="background: var(--bg-card); border: 2px solid #cbd5e1; border-radius: var(--radius); padding: 3rem; text-align: center; box-shadow: var(--shadow-card);">
+          <i class="fa-solid fa-box-open" style="font-size: 3rem; color: #334155; margin-bottom: 1rem;"></i>
+          <h3 style="color: #000000; font-weight: 800;">No matching products found</h3>
+          <p style="color: #000000; margin-bottom: 1.5rem; font-weight: 500;">Try adjusting your search terms or clearing your filter selections.</p>
           <a href="products.php" class="btn btn-primary">Clear Filters</a>
         </div>
       <?php else: ?>
@@ -109,7 +109,7 @@ $allBrands = [
               </div>
 
               <div class="product-info">
-                <div class="product-brand"><?= htmlspecialchars($item['brand'] ?? 'LIT') ?></div>
+                <div class="product-brand"><?= htmlspecialchars($item['brand'] ?? 'KFC') ?></div>
                 <h3><?= htmlspecialchars($item['name']) ?></h3>
                 <div class="product-specs-summary"><?= htmlspecialchars($item['specifications']) ?></div>
 

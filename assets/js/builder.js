@@ -1,4 +1,4 @@
-// LIT Computers Interactive Custom PC Builder Engine
+// KFC Computers Interactive Custom PC Builder Engine
 
 let selectedComponents = {};
 let componentsData = [];
@@ -47,7 +47,7 @@ function renderComponents(category) {
     const filtered = componentsData.filter(c => c.category === category);
     
     if (filtered.length === 0) {
-        grid.innerHTML = `<div style="grid-column: 1/-1; padding: 2rem; text-align: center; color: var(--text-muted);">No components available in ${category}.</div>`;
+        grid.innerHTML = `<div style="grid-column: 1/-1; padding: 2rem; text-align: center; color: #000000; font-weight: 700;">No components available in ${category}.</div>`;
         return;
     }
 
@@ -56,13 +56,13 @@ function renderComponents(category) {
         const formattedPrice = '₹' + Number(c.price).toLocaleString('en-IN');
         
         return `
-            <div class="product-card ${isSelected ? 'selected-card' : ''}" style="${isSelected ? 'border-color: var(--primary-cyan); background: var(--bg-card-hover);' : ''}">
+            <div class="product-card ${isSelected ? 'selected-card' : ''}" style="${isSelected ? 'border-color: var(--primary-blue); background: #f8fafc;' : ''}">
                 <div class="product-img-wrapper">
                     <img src="${c.image}" alt="${c.name}" loading="lazy">
                     <span class="badge-category">${c.category}</span>
                 </div>
                 <div class="product-info">
-                    <div class="product-brand">${c.brand || 'LIT'}</div>
+                    <div class="product-brand">${c.brand || 'KFC'}</div>
                     <h3>${c.name}</h3>
                     <div class="product-specs-summary">${c.specifications}</div>
                     <div class="product-footer">
@@ -115,17 +115,17 @@ function updateBuildSummary() {
                     <div class="build-item-category">${cat}</div>
                 </div>
                 <div style="text-align: right;">
-                    <div style="font-weight: 700; color: var(--primary-cyan);">₹${Number(item.price).toLocaleString('en-IN')}</div>
-                    <a href="javascript:void(0)" onclick="toggleSelectComponent('${cat}', ${item.id})" style="color: var(--accent-red); font-size: 0.75rem;">Remove</a>
+                    <div style="font-weight: 800; color: var(--accent-gold);">₹${Number(item.price).toLocaleString('en-IN')}</div>
+                    <a href="javascript:void(0)" onclick="toggleSelectComponent('${cat}', ${item.id})" style="color: var(--accent-red); font-size: 0.78rem; font-weight: 700;">Remove</a>
                 </div>
             `;
         } else {
             li.innerHTML = `
                 <div>
-                    <div class="build-item-name" style="color: var(--text-dim); font-style: italic;">Not Selected</div>
+                    <div class="build-item-name" style="color: #64748b; font-style: italic; font-weight: 600;">Not Selected</div>
                     <div class="build-item-category">${cat}</div>
                 </div>
-                <div style="color: var(--text-dim); font-size: 0.8rem;">-</div>
+                <div style="color: #64748b; font-size: 0.8rem; font-weight: 700;">-</div>
             `;
         }
         listEl.appendChild(li);
@@ -198,7 +198,7 @@ function confirmCustomBuild() {
     let buildPrice = selectedList.reduce((sum, item) => sum + Number(item.price), 0);
     const customBuildItem = {
         id: 999000 + Date.now(),
-        name: 'Custom LIT Gaming Build',
+        name: 'Custom KFC Gaming Build',
         category: 'Custom PC',
         price: buildPrice,
         image: 'assets/images/products/ultimate-gaming-pc.svg',

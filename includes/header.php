@@ -9,7 +9,7 @@ $currentUser = $_SESSION['user'] ?? null;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIT Computers | High-Performance PCs & Components</title>
+  <title>KFC Computers | High-Performance PCs & Components</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -18,7 +18,7 @@ $currentUser = $_SESSION['user'] ?? null;
 <header class="navbar">
   <div class="nav-container">
     <a href="index.php" class="logo">
-      LIT <span>COMPUTERS</span> <span class="logo-badge">INDIA</span>
+      KFC <span>COMPUTERS</span> <span class="logo-badge">INDIA</span>
     </a>
 
     <form action="products.php" method="GET" class="search-bar">
@@ -30,9 +30,9 @@ $currentUser = $_SESSION['user'] ?? null;
       <li><a href="index.php">Home</a></li>
       <li><a href="products.php?category=Ready-Made+PC">Ready-Made PCs</a></li>
       <li><a href="products.php">Components</a></li>
-      <li><a href="builder.php" style="color: var(--primary-cyan); font-weight: 700;"><i class="fa-solid fa-screwdriver-wrench"></i> PC Builder</a></li>
+      <li><a href="builder.php" style="color: var(--primary-blue); font-weight: 700;"><i class="fa-solid fa-screwdriver-wrench"></i> PC Builder</a></li>
       <?php if ($currentUser && ($currentUser['role'] === 'admin')): ?>
-        <li><a href="admin/products.php" style="color: var(--accent-warning);"><i class="fa-solid fa-user-shield"></i> Admin Panel</a></li>
+        <li><a href="admin/products.php" style="color: var(--accent-gold);"><i class="fa-solid fa-user-shield"></i> Admin Panel</a></li>
       <?php endif; ?>
     </ul>
 
@@ -45,7 +45,7 @@ $currentUser = $_SESSION['user'] ?? null;
 
       <?php if ($currentUser): ?>
         <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 0.85rem; color: var(--text-muted);">Hi, <?= htmlspecialchars($currentUser['name']) ?></span>
+          <span style="font-size: 0.85rem; color: #000; font-weight: 600;">Hi, <?= htmlspecialchars($currentUser['name']) ?></span>
           <a href="logout.php" class="btn btn-outline btn-sm">Logout</a>
         </div>
       <?php else: ?>
