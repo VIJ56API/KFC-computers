@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <!-- Card Background -->
+  <rect x="10" y="10" width="380" height="300" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+  
+  <!-- Subtle Grid lines -->
+  <path d="M 10 70 L 390 70 M 10 240 L 390 240 M 100 10 L 100 310 M 300 10 L 300 310" stroke="#f1f5f9" stroke-width="1" />
+
+  <!-- Center Graphic Icon -->
+  <g>
+    <rect x="110" y="120" width="180" height="80" rx="8" fill="#f1f5f9" stroke="#0284c7" stroke-width="3"/>
+            <circle cx="165" cy="160" r="28" fill="#e2e8f0" stroke="#d97706" stroke-width="3"/>
+            <circle cx="235" cy="160" r="28" fill="#e2e8f0" stroke="#d97706" stroke-width="3"/>
+            <rect x="110" y="195" width="60" height="12" fill="#d97706"/>
+  </g>
+
+  <!-- Product Title & Subtext Overlay -->
+  <rect x="20" y="250" width="360" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="200" y="272" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15" fill="#0f172a" text-anchor="middle">NVIDIA RTX 3050 6GB</text>
+  <text x="200" y="290" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#d97706" text-anchor="middle">Ray Tracing • DLSS</text>
+</svg>

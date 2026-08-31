@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <!-- Card Background -->
+  <rect x="10" y="10" width="380" height="300" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+  
+  <!-- Subtle Grid lines -->
+  <path d="M 10 70 L 390 70 M 10 240 L 390 240 M 100 10 L 100 310 M 300 10 L 300 310" stroke="#f1f5f9" stroke-width="1" />
+
+  <!-- Center Graphic Icon -->
+  <g>
+    <rect x="140" y="90" width="120" height="160" rx="10" fill="#e2e8f0" stroke="#0284c7" stroke-width="3"/>
+            <rect x="155" y="105" width="90" height="100" rx="6" fill="#f1f5f9"/>
+            <circle cx="200" cy="135" r="22" fill="none" stroke="#d97706" stroke-width="4"/>
+            <circle cx="200" cy="180" r="18" fill="none" stroke="#0284c7" stroke-width="3"/>
+            <line x1="155" y1="220" x2="235" y2="220" stroke="#d97706" stroke-width="3"/>
+  </g>
+
+  <!-- Product Title & Subtext Overlay -->
+  <rect x="20" y="250" width="360" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="200" y="272" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15" fill="#0f172a" text-anchor="middle">LIT Frost 360mm AIO</text>
+  <text x="200" y="290" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#d97706" text-anchor="middle">360mm ARGB Liquid Cooler</text>
+</svg>

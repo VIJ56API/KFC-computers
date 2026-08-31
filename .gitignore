@@ -1,0 +1,10 @@
+# Temporary test scripts
+test_suite.php
+generate_svg_assets.php
+
+# Database runtime files (optional)
+database/*.db
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "LIT Starter Gaming PC",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 45999,
+        "image": "assets\/images\/products\/starter-gaming-pc.svg",
+        "short_description": "An affordable gaming PC designed for 1080p gaming, students and everyday performance.",
+        "description": "The LIT Starter Gaming PC is the ideal entry point into desktop PC gaming. Engineered with AMD Ryzen 5 processor and NVIDIA RTX graphics, it handles popular titles like CS2, Valorant, GTA V, and Fortnite with high frame rates.",
+        "specifications": "CPU: AMD Ryzen 5 5600\nGPU: NVIDIA GeForce RTX 3050 6GB\nRAM: 16GB DDR4 3200MHz\nStorage: 512GB NVMe M.2 SSD\nMotherboard: AMD B550 Chipset\nPSU: 550W 80+ Bronze Certified\nCabinet: LIT Gaming Mid Tower RGB\nCooling: High Performance Air Cooler",
+        "stock": 15
+    },
+    {
+        "id": 2,
+        "name": "LIT Gaming Pro",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 69999,
+        "image": "assets\/images\/products\/gaming-pro.svg",
+        "short_description": "A powerful 1080p\/1440p gaming PC with excellent upgrade potential.",
+        "description": "Unleash high-definition gaming and streaming with the LIT Gaming Pro. Packed with the AM5 Ryzen 5 7600 and DLSS 3 powered RTX 4060, this rig guarantees smooth gameplay across modern AAA games.",
+        "specifications": "CPU: AMD Ryzen 5 7600\nGPU: NVIDIA GeForce RTX 4060 8GB GDDR6\nRAM: 16GB DDR5 5200MHz\nStorage: 1TB NVMe Gen4 SSD\nMotherboard: AMD B650 Gaming\nPSU: 650W 80+ Bronze\nCabinet: LIT Airflow Gaming Case\nCooling: Tower Air Cooler",
+        "stock": 12
+    },
+    {
+        "id": 3,
+        "name": "LIT Creator PC",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 89999,
+        "image": "assets\/images\/products\/creator-pc.svg",
+        "short_description": "Designed for video editing, programming, 3D work and content creation.",
+        "description": "Tailored for creative professionals, developers, and video editors. Features multi-threaded Intel Core i7 computing power and fast 32GB DDR5 RAM for seamless multitasking and quick rendering.",
+        "specifications": "CPU: Intel Core i7 14700K\nGPU: NVIDIA GeForce RTX 4060 Ti 8GB\nRAM: 32GB DDR5 5600MHz\nStorage: 1TB Gen4 NVMe SSD\nMotherboard: Intel B760 Creator\nPSU: 650W 80+ Gold\nCabinet: LIT Creator Quiet Case\nCooling: 240mm Liquid AIO Cooler",
+        "stock": 8
+    },
+    {
+        "id": 4,
+        "name": "LIT Ultimate Gaming PC",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 129999,
+        "image": "assets\/images\/products\/ultimate-gaming-pc.svg",
+        "short_description": "High-performance gaming and workstation PC for demanding users.",
+        "description": "Built for enthusiasts who compromise on nothing. Dominate 1440p and 4K gaming with ray tracing and ultra settings, powered by Ryzen 7 and RTX 4070 graphics.",
+        "specifications": "CPU: AMD Ryzen 7 7800X3D\nGPU: NVIDIA GeForce RTX 4070 12GB GDDR6X\nRAM: 32GB DDR5 6000MHz RGB\nStorage: 2TB NVMe Gen4 SSD\nMotherboard: AMD B650 Gaming Wi-Fi\nPSU: 750W 80+ Gold Modular\nCabinet: Premium Airflow Mesh Case\nCooling: 240mm ARGB AIO Liquid Cooler",
+        "stock": 10
+    },
+    {
+        "id": 5,
+        "name": "LIT Student PC",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 32999,
+        "image": "assets\/images\/products\/student-pc.svg",
+        "short_description": "Affordable computer for students, coding, browsing, MS Office and everyday work.",
+        "description": "A reliable, compact desktop PC crafted for students, online classes, light coding, Web browsing, and document handling. Extremely energy efficient and durable.",
+        "specifications": "CPU: Intel Core i3 14100\nGPU: Intel UHD Graphics 730\nRAM: 16GB DDR4 3200MHz\nStorage: 512GB High Speed SSD\nMotherboard: Compatible Intel H610 Motherboard\nPSU: 450W Reliable Power Supply\nCabinet: LIT Office Sleek Cabinet\nCooling: Standard Intel Air Cooler",
+        "stock": 20
+    },
+    {
+        "id": 6,
+        "name": "LIT Office PC",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 38999,
+        "image": "assets\/images\/products\/office-pc.svg",
+        "short_description": "Reliable PC for office applications, business work and productivity.",
+        "description": "Designed for small businesses, accounting, dual-monitor office setups, and productivity tasks. Fast boot times and low operation noise.",
+        "specifications": "CPU: Intel Core i5 14400\nGPU: Intel UHD Graphics 770\nRAM: 16GB DDR4 3200MHz\nStorage: 512GB NVMe SSD\nMotherboard: Intel B760 Business\nPSU: 450W 80+ Efficiency PSU\nCabinet: Business Mid Tower Ergonomic Case\nCooling: Silent Air Cooler",
+        "stock": 18
+    },
+    {
+        "id": 7,
+        "name": "LIT Editing Beast",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 109999,
+        "image": "assets\/images\/products\/editing-beast.svg",
+        "short_description": "Powerful Ryzen 9 workstation for 4K video editing, 3D modeling and heavy multitasking.",
+        "description": "The LIT Editing Beast combines Ryzen 9 processing power with 32GB DDR5 RAM and RTX 4070 graphics for butter-smooth timeline rendering in Premiere Pro, DaVinci Resolve, Blender, and Maya.",
+        "specifications": "CPU: AMD Ryzen 9 7900X\nGPU: NVIDIA GeForce RTX 4070 12GB\nRAM: 32GB DDR5 6000MHz\nStorage: 2TB Gen4 M.2 NVMe SSD\nMotherboard: AMD B650\/X670 Professional\nPSU: 750W 80+ Gold Fully Modular\nCabinet: LIT Heavy Duty Workstation Tower\nCooling: 360mm Liquid AIO Cooler",
+        "stock": 6
+    },
+    {
+        "id": 8,
+        "name": "LIT Budget Gaming PC",
+        "category": "Ready-Made PC",
+        "brand": "LIT Computers",
+        "price": 39999,
+        "image": "assets\/images\/products\/budget-gaming-pc.svg",
+        "short_description": "Entry-level gaming PC offering smooth esports gaming at an unbeatable price.",
+        "description": "Get high FPS gaming on a tight budget. Optimized for games like CS:GO, DOTA 2, Rocket League, and Valorant without breaking the bank.",
+        "specifications": "CPU: AMD Ryzen 5 5500\nGPU: AMD Radeon RX 6500 XT 4GB\nRAM: 16GB DDR4 3200MHz\nStorage: 512GB NVMe M.2 SSD\nMotherboard: AMD A520 Gaming\nPSU: 550W 80+ Certified\nCabinet: Gaming Mid Tower with LED Fans\nCooling: AMD Wraith Spire Cooler",
+        "stock": 14
+    }
+]
