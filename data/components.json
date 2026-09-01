@@ -1,634 +1,635 @@
 [
-  {
-    "id": 101,
-    "name": "AMD Ryzen 5 5600",
-    "category": "CPU",
-    "brand": "AMD",
-    "price": 11999,
-    "image": "assets/images/products/cpu-ryzen5-5600.png",
-    "specifications": "Socket: AM4 | Cores: 6 | Threads: 12 | Base Clock: 3.5GHz | Boost Clock: 4.4GHz | TDP: 65W",
-    "compatibility": {
-      "socket": "AM4",
-      "ram_type": "DDR4",
-      "wattage": 65
+    {
+        "id": 102,
+        "name": "AMD Ryzen 5 7600",
+        "category": "CPU",
+        "brand": "AMD",
+        "price": 18999,
+        "image": "assets\/images\/products\/cpu-ryzen5-7600.png",
+        "specifications": "Socket: AM5 | Cores: 6 | Threads: 12 | Base Clock: 3.8GHz | Boost Clock: 5.1GHz | TDP: 65W",
+        "compatibility": {
+            "socket": "AM5",
+            "ram_type": "DDR5",
+            "wattage": 65
+        },
+        "stock": 18
     },
-    "stock": 25
-  },
-  {
-    "id": 102,
-    "name": "AMD Ryzen 5 7600",
-    "category": "CPU",
-    "brand": "AMD",
-    "price": 18999,
-    "image": "assets/images/products/cpu-ryzen5-7600.png",
-    "specifications": "Socket: AM5 | Cores: 6 | Threads: 12 | Base Clock: 3.8GHz | Boost Clock: 5.1GHz | TDP: 65W",
-    "compatibility": {
-      "socket": "AM5",
-      "ram_type": "DDR5",
-      "wattage": 65
+    {
+        "id": 103,
+        "name": "Intel Core i5 14400F",
+        "category": "CPU",
+        "brand": "Intel",
+        "price": 19999,
+        "image": "assets\/images\/products\/cpu-intel-i5-14400f.png",
+        "specifications": "Socket: LGA1700 | Cores: 10 (6P+4E) | Threads: 16 | Base Clock: 2.5GHz | Boost Clock: 4.7GHz | TDP: 65W",
+        "compatibility": {
+            "socket": "LGA1700",
+            "ram_type": "DDR5",
+            "wattage": 65
+        },
+        "stock": 20
     },
-    "stock": 18
-  },
-  {
-    "id": 103,
-    "name": "Intel Core i5 14400F",
-    "category": "CPU",
-    "brand": "Intel",
-    "price": 19999,
-    "image": "assets/images/products/cpu-intel-i5-14400f.png",
-    "specifications": "Socket: LGA1700 | Cores: 10 (6P+4E) | Threads: 16 | Base Clock: 2.5GHz | Boost Clock: 4.7GHz | TDP: 65W",
-    "compatibility": {
-      "socket": "LGA1700",
-      "ram_type": "DDR5",
-      "wattage": 65
+    {
+        "id": 104,
+        "name": "Intel Core i7 14700K",
+        "category": "CPU",
+        "brand": "Intel",
+        "price": 39999,
+        "image": "assets\/images\/products\/cpu-intel-i7-14700k.png",
+        "specifications": "Socket: LGA1700 | Cores: 20 (8P+12E) | Threads: 28 | Base Clock: 3.4GHz | Boost Clock: 5.6GHz | TDP: 125W",
+        "compatibility": {
+            "socket": "LGA1700",
+            "ram_type": "DDR5",
+            "wattage": 125
+        },
+        "stock": 12
     },
-    "stock": 20
-  },
-  {
-    "id": 104,
-    "name": "Intel Core i7 14700K",
-    "category": "CPU",
-    "brand": "Intel",
-    "price": 39999,
-    "image": "assets/images/products/cpu-intel-i7-14700k.png",
-    "specifications": "Socket: LGA1700 | Cores: 20 (8P+12E) | Threads: 28 | Base Clock: 3.4GHz | Boost Clock: 5.6GHz | TDP: 125W",
-    "compatibility": {
-      "socket": "LGA1700",
-      "ram_type": "DDR5",
-      "wattage": 125
+    {
+        "id": 105,
+        "name": "AMD Ryzen 7 7800X3D",
+        "category": "CPU",
+        "brand": "AMD",
+        "price": 36999,
+        "image": "assets\/images\/products\/cpu-ryzen7-7800x3d.png",
+        "specifications": "Socket: AM5 | Cores: 8 | Threads: 16 | 3D V-Cache 96MB | TDP: 120W",
+        "compatibility": {
+            "socket": "AM5",
+            "ram_type": "DDR5",
+            "wattage": 120
+        },
+        "stock": 10
     },
-    "stock": 12
-  },
-  {
-    "id": 105,
-    "name": "AMD Ryzen 7 7800X3D",
-    "category": "CPU",
-    "brand": "AMD",
-    "price": 36999,
-    "image": "assets/images/products/cpu-ryzen7-7800x3d.png",
-    "specifications": "Socket: AM5 | Cores: 8 | Threads: 16 | 3D V-Cache 96MB | TDP: 120W",
-    "compatibility": {
-      "socket": "AM5",
-      "ram_type": "DDR5",
-      "wattage": 120
+    {
+        "id": 201,
+        "name": "MSI B550 Gaming Motherboard",
+        "category": "Motherboard",
+        "brand": "MSI",
+        "price": 10999,
+        "image": "assets\/images\/products\/mb-b550.png",
+        "specifications": "Socket: AM4 | Form Factor: ATX | Memory Slots: 4x DDR4 | PCIe 4.0 | M.2 Slots: 2",
+        "compatibility": {
+            "socket": "AM4",
+            "ram_type": "DDR4"
+        },
+        "stock": 15
     },
-    "stock": 10
-  },
-  {
-    "id": 201,
-    "name": "MSI B550 Gaming Motherboard",
-    "category": "Motherboard",
-    "brand": "MSI",
-    "price": 10999,
-    "image": "assets/images/products/mb-b550.png",
-    "specifications": "Socket: AM4 | Form Factor: ATX | Memory Slots: 4x DDR4 | PCIe 4.0 | M.2 Slots: 2",
-    "compatibility": {
-      "socket": "AM4",
-      "ram_type": "DDR4"
+    {
+        "id": 202,
+        "name": "MSI B650 Gaming Motherboard",
+        "category": "Motherboard",
+        "brand": "MSI",
+        "price": 16999,
+        "image": "assets\/images\/products\/mb-b650.png",
+        "specifications": "Socket: AM5 | Form Factor: ATX | Memory Slots: 4x DDR5 | PCIe 4.0 | Wi-Fi 6E",
+        "compatibility": {
+            "socket": "AM5",
+            "ram_type": "DDR5"
+        },
+        "stock": 14
     },
-    "stock": 15
-  },
-  {
-    "id": 202,
-    "name": "MSI B650 Gaming Motherboard",
-    "category": "Motherboard",
-    "brand": "MSI",
-    "price": 16999,
-    "image": "assets/images/products/mb-b650.png",
-    "specifications": "Socket: AM5 | Form Factor: ATX | Memory Slots: 4x DDR5 | PCIe 4.0 | Wi-Fi 6E",
-    "compatibility": {
-      "socket": "AM5",
-      "ram_type": "DDR5"
+    {
+        "id": 203,
+        "name": "Gigabyte B760 Gaming Motherboard",
+        "category": "Motherboard",
+        "brand": "Gigabyte",
+        "price": 15999,
+        "image": "assets\/images\/products\/mb-b760-gigabyte.png",
+        "specifications": "Socket: LGA1700 | Form Factor: ATX | Memory Slots: 4x DDR5 | PCIe 4.0 | M.2 NVMe",
+        "compatibility": {
+            "socket": "LGA1700",
+            "ram_type": "DDR5"
+        },
+        "stock": 18
     },
-    "stock": 14
-  },
-  {
-    "id": 203,
-    "name": "Gigabyte B760 Gaming Motherboard",
-    "category": "Motherboard",
-    "brand": "Gigabyte",
-    "price": 15999,
-    "image": "assets/images/products/mb-b760-gigabyte.png",
-    "specifications": "Socket: LGA1700 | Form Factor: ATX | Memory Slots: 4x DDR5 | PCIe 4.0 | M.2 NVMe",
-    "compatibility": {
-      "socket": "LGA1700",
-      "ram_type": "DDR5"
+    {
+        "id": 204,
+        "name": "ASUS B760 Motherboard",
+        "category": "Motherboard",
+        "brand": "ASUS",
+        "price": 18999,
+        "image": "assets\/images\/products\/mb-b760-asus.png",
+        "specifications": "Socket: LGA1700 | Form Factor: Micro-ATX | Memory Slots: 4x DDR5 | Aura Sync RGB",
+        "compatibility": {
+            "socket": "LGA1700",
+            "ram_type": "DDR5"
+        },
+        "stock": 12
     },
-    "stock": 18
-  },
-  {
-    "id": 204,
-    "name": "ASUS B760 Motherboard",
-    "category": "Motherboard",
-    "brand": "ASUS",
-    "price": 18999,
-    "image": "assets/images/products/mb-b760-asus.png",
-    "specifications": "Socket: LGA1700 | Form Factor: Micro-ATX | Memory Slots: 4x DDR5 | Aura Sync RGB",
-    "compatibility": {
-      "socket": "LGA1700",
-      "ram_type": "DDR5"
+    {
+        "id": 301,
+        "name": "Corsair Vengeance 8GB DDR4 3200MHz",
+        "category": "RAM",
+        "brand": "Corsair",
+        "price": 2499,
+        "image": "assets\/images\/products\/ram-8gb-ddr4.png",
+        "specifications": "Capacity: 8GB (1x8GB) | Speed: DDR4 3200MHz | CAS Latency: CL16",
+        "compatibility": {
+            "ram_type": "DDR4"
+        },
+        "stock": 35
     },
-    "stock": 12
-  },
-  {
-    "id": 301,
-    "name": "Corsair Vengeance 8GB DDR4 3200MHz",
-    "category": "RAM",
-    "brand": "Corsair",
-    "price": 2499,
-    "image": "assets/images/products/ram-8gb-ddr4.png",
-    "specifications": "Capacity: 8GB (1x8GB) | Speed: DDR4 3200MHz | CAS Latency: CL16",
-    "compatibility": {
-      "ram_type": "DDR4"
+    {
+        "id": 302,
+        "name": "Corsair Vengeance 16GB DDR4 3200MHz",
+        "category": "RAM",
+        "brand": "Corsair",
+        "price": 4499,
+        "image": "assets\/images\/products\/ram-16gb-ddr4.png",
+        "specifications": "Capacity: 16GB (2x8GB) | Speed: DDR4 3200MHz | Heat Spreader: Anodized Aluminum",
+        "compatibility": {
+            "ram_type": "DDR4"
+        },
+        "stock": 40
     },
-    "stock": 35
-  },
-  {
-    "id": 302,
-    "name": "Corsair Vengeance 16GB DDR4 3200MHz",
-    "category": "RAM",
-    "brand": "Corsair",
-    "price": 4499,
-    "image": "assets/images/products/ram-16gb-ddr4.png",
-    "specifications": "Capacity: 16GB (2x8GB) | Speed: DDR4 3200MHz | Heat Spreader: Anodized Aluminum",
-    "compatibility": {
-      "ram_type": "DDR4"
+    {
+        "id": 303,
+        "name": "Kingston Fury 16GB DDR5 5200MHz",
+        "category": "RAM",
+        "brand": "Kingston",
+        "price": 4999,
+        "image": "assets\/images\/products\/ram-16gb-ddr5.png",
+        "specifications": "Capacity: 16GB (1x16GB) | Speed: DDR5 5200MHz | XMP 3.0 Support",
+        "compatibility": {
+            "ram_type": "DDR5"
+        },
+        "stock": 28
     },
-    "stock": 40
-  },
-  {
-    "id": 303,
-    "name": "Kingston Fury 16GB DDR5 5200MHz",
-    "category": "RAM",
-    "brand": "Kingston",
-    "price": 4999,
-    "image": "assets/images/products/ram-16gb-ddr5.png",
-    "specifications": "Capacity: 16GB (1x16GB) | Speed: DDR5 5200MHz | XMP 3.0 Support",
-    "compatibility": {
-      "ram_type": "DDR5"
+    {
+        "id": 304,
+        "name": "Corsair Vengeance 32GB DDR5 6000MHz RGB",
+        "category": "RAM",
+        "brand": "Corsair",
+        "price": 9499,
+        "image": "assets\/images\/products\/ram-32gb-ddr5.png",
+        "specifications": "Capacity: 32GB (2x16GB) | Speed: DDR5 6000MHz | Dynamic Multi-Zone RGB",
+        "compatibility": {
+            "ram_type": "DDR5"
+        },
+        "stock": 22
     },
-    "stock": 28
-  },
-  {
-    "id": 304,
-    "name": "Corsair Vengeance 32GB DDR5 6000MHz RGB",
-    "category": "RAM",
-    "brand": "Corsair",
-    "price": 9499,
-    "image": "assets/images/products/ram-32gb-ddr5.png",
-    "specifications": "Capacity: 32GB (2x16GB) | Speed: DDR5 6000MHz | Dynamic Multi-Zone RGB",
-    "compatibility": {
-      "ram_type": "DDR5"
+    {
+        "id": 305,
+        "name": "Kingston Fury Beast 32GB DDR4 3600MHz",
+        "category": "RAM",
+        "brand": "Kingston",
+        "price": 7999,
+        "image": "assets\/images\/products\/ram-16gb-ddr4.png",
+        "specifications": "Capacity: 32GB (2x16GB) | Speed: DDR4 3600MHz | High Speed Dual Channel",
+        "compatibility": {
+            "ram_type": "DDR4"
+        },
+        "stock": 18
     },
-    "stock": 22
-  },
-  {
-    "id": 305,
-    "name": "Kingston Fury Beast 32GB DDR4 3600MHz",
-    "category": "RAM",
-    "brand": "Kingston",
-    "price": 7999,
-    "image": "assets/images/products/ram-16gb-ddr4.png",
-    "specifications": "Capacity: 32GB (2x16GB) | Speed: DDR4 3600MHz | High Speed Dual Channel",
-    "compatibility": {
-      "ram_type": "DDR4"
+    {
+        "id": 401,
+        "name": "NVIDIA GeForce RTX 3050 6GB",
+        "category": "GPU",
+        "brand": "NVIDIA",
+        "price": 19999,
+        "image": "assets\/images\/products\/gpu-rtx-3050.png",
+        "specifications": "VRAM: 6GB GDDR6 | Ray Tracing | DLSS Support | Power Draw: 115W",
+        "compatibility": {
+            "wattage": 115
+        },
+        "stock": 16
     },
-    "stock": 18
-  },
-  {
-    "id": 401,
-    "name": "NVIDIA GeForce RTX 3050 6GB",
-    "category": "GPU",
-    "brand": "NVIDIA",
-    "price": 19999,
-    "image": "assets/images/products/gpu-rtx-3050.png",
-    "specifications": "VRAM: 6GB GDDR6 | Ray Tracing | DLSS Support | Power Draw: 115W",
-    "compatibility": {
-      "wattage": 115
+    {
+        "id": 402,
+        "name": "AMD Radeon RX 6600 8GB",
+        "category": "GPU",
+        "brand": "AMD",
+        "price": 21999,
+        "image": "assets\/images\/products\/gpu-rx-6600.png",
+        "specifications": "VRAM: 8GB GDDR6 | PCIe 4.0 | FSR 3 Support | Power Draw: 132W",
+        "compatibility": {
+            "wattage": 132
+        },
+        "stock": 14
     },
-    "stock": 16
-  },
-  {
-    "id": 402,
-    "name": "AMD Radeon RX 6600 8GB",
-    "category": "GPU",
-    "brand": "AMD",
-    "price": 21999,
-    "image": "assets/images/products/gpu-rx-6600.png",
-    "specifications": "VRAM: 8GB GDDR6 | PCIe 4.0 | FSR 3 Support | Power Draw: 132W",
-    "compatibility": {
-      "wattage": 132
+    {
+        "id": 403,
+        "name": "NVIDIA GeForce RTX 4060 8GB",
+        "category": "GPU",
+        "brand": "NVIDIA",
+        "price": 29999,
+        "image": "assets\/images\/products\/gpu-rtx-4060.png",
+        "specifications": "VRAM: 8GB GDDR6 | Ada Lovelace Architecture | DLSS 3 Frame Generation | Power Draw: 115W",
+        "compatibility": {
+            "wattage": 115
+        },
+        "stock": 20
     },
-    "stock": 14
-  },
-  {
-    "id": 403,
-    "name": "NVIDIA GeForce RTX 4060 8GB",
-    "category": "GPU",
-    "brand": "NVIDIA",
-    "price": 29999,
-    "image": "assets/images/products/gpu-rtx-4060.png",
-    "specifications": "VRAM: 8GB GDDR6 | Ada Lovelace Architecture | DLSS 3 Frame Generation | Power Draw: 115W",
-    "compatibility": {
-      "wattage": 115
+    {
+        "id": 404,
+        "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+        "category": "GPU",
+        "brand": "NVIDIA",
+        "price": 39999,
+        "image": "assets\/images\/products\/gpu-rtx-4060ti.png",
+        "specifications": "VRAM: 8GB GDDR6 | 4352 CUDA Cores | DLSS 3 | Power Draw: 160W",
+        "compatibility": {
+            "wattage": 160
+        },
+        "stock": 12
     },
-    "stock": 20
-  },
-  {
-    "id": 404,
-    "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
-    "category": "GPU",
-    "brand": "NVIDIA",
-    "price": 39999,
-    "image": "assets/images/products/gpu-rtx-4060ti.png",
-    "specifications": "VRAM: 8GB GDDR6 | 4352 CUDA Cores | DLSS 3 | Power Draw: 160W",
-    "compatibility": {
-      "wattage": 160
+    {
+        "id": 405,
+        "name": "NVIDIA GeForce RTX 4070 12GB",
+        "category": "GPU",
+        "brand": "NVIDIA",
+        "price": 54999,
+        "image": "assets\/images\/products\/gpu-rtx-4070.png",
+        "specifications": "VRAM: 12GB GDDR6X | 5888 CUDA Cores | 1440p \/ 4K Gaming Leader | Power Draw: 200W",
+        "compatibility": {
+            "wattage": 200
+        },
+        "stock": 9
     },
-    "stock": 12
-  },
-  {
-    "id": 405,
-    "name": "NVIDIA GeForce RTX 4070 12GB",
-    "category": "GPU",
-    "brand": "NVIDIA",
-    "price": 54999,
-    "image": "assets/images/products/gpu-rtx-4070.png",
-    "specifications": "VRAM: 12GB GDDR6X | 5888 CUDA Cores | 1440p / 4K Gaming Leader | Power Draw: 200W",
-    "compatibility": {
-      "wattage": 200
+    {
+        "id": 501,
+        "name": "Kingston NV2 500GB NVMe M.2 SSD",
+        "category": "SSD",
+        "brand": "Kingston",
+        "price": 3499,
+        "image": "assets\/images\/products\/ssd-500gb.png",
+        "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 3500 MB\/s | Write Speed: 2100 MB\/s",
+        "compatibility": [],
+        "stock": 30
     },
-    "stock": 9
-  },
-  {
-    "id": 501,
-    "name": "Kingston NV2 500GB NVMe M.2 SSD",
-    "category": "SSD",
-    "brand": "Kingston",
-    "price": 3499,
-    "image": "assets/images/products/ssd-500gb.png",
-    "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 3500 MB/s | Write Speed: 2100 MB/s",
-    "compatibility": {},
-    "stock": 30
-  },
-  {
-    "id": 502,
-    "name": "WD Blue SN580 1TB NVMe M.2 SSD",
-    "category": "SSD",
-    "brand": "Western Digital",
-    "price": 5999,
-    "image": "assets/images/products/ssd-1tb-wd.png",
-    "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 4150 MB/s | nCache 4.0 Technology",
-    "compatibility": {},
-    "stock": 25
-  },
-  {
-    "id": 503,
-    "name": "Samsung 980 PRO 1TB NVMe SSD",
-    "category": "SSD",
-    "brand": "Samsung",
-    "price": 7499,
-    "image": "assets/images/products/ssd-1tb-samsung.png",
-    "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 7000 MB/s | Thermal Control",
-    "compatibility": {},
-    "stock": 18
-  },
-  {
-    "id": 504,
-    "name": "Samsung 990 PRO 2TB NVMe SSD",
-    "category": "SSD",
-    "brand": "Samsung",
-    "price": 12999,
-    "image": "assets/images/products/ssd-2tb-samsung.png",
-    "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 7450 MB/s | 2TB Capacity",
-    "compatibility": {},
-    "stock": 15
-  },
-  {
-    "id": 601,
-    "name": "Seagate Barracuda 1TB Hard Drive",
-    "category": "HDD",
-    "brand": "Seagate",
-    "price": 3499,
-    "image": "assets/images/products/hdd-1tb.png",
-    "specifications": "Capacity: 1TB | Form Factor: 3.5 Inch | RPM: 7200 | Cache: 64MB",
-    "compatibility": {},
-    "stock": 25
-  },
-  {
-    "id": 602,
-    "name": "WD Blue 2TB Hard Drive",
-    "category": "HDD",
-    "brand": "Western Digital",
-    "price": 5499,
-    "image": "assets/images/products/hdd-2tb.png",
-    "specifications": "Capacity: 2TB | Form Factor: 3.5 Inch | RPM: 5400 | SATA 6Gb/s",
-    "compatibility": {},
-    "stock": 20
-  },
-  {
-    "id": 603,
-    "name": "Seagate Barracuda 4TB Hard Drive",
-    "category": "HDD",
-    "brand": "Seagate",
-    "price": 8999,
-    "image": "assets/images/products/hdd-4tb.png",
-    "specifications": "Capacity: 4TB | Form Factor: 3.5 Inch | RPM: 5400 | Mass Storage",
-    "compatibility": {},
-    "stock": 14
-  },
-  {
-    "id": 604,
-    "name": "WD Purple 4TB Surveillance HDD",
-    "category": "HDD",
-    "brand": "Western Digital",
-    "price": 9499,
-    "image": "assets/images/products/hdd-4tb.png",
-    "specifications": "Capacity: 4TB | 24x7 Continuous Operation | AllFrame Technology",
-    "compatibility": {},
-    "stock": 10
-  },
-  {
-    "id": 701,
-    "name": "KFC Power 550W 80+ Bronze PSU",
-    "category": "PSU",
-    "brand": "KFC Computers",
-    "price": 4499,
-    "image": "assets/images/products/psu-550w.png",
-    "specifications": "Wattage: 550W | Efficiency: 80 Plus Bronze | Fan: 120mm Silent",
-    "compatibility": {
-      "psu_wattage": 550
+    {
+        "id": 502,
+        "name": "WD Blue SN580 1TB NVMe M.2 SSD",
+        "category": "SSD",
+        "brand": "Western Digital",
+        "price": 5999,
+        "image": "assets\/images\/products\/ssd-1tb-wd.png",
+        "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 4150 MB\/s | nCache 4.0 Technology",
+        "compatibility": [],
+        "stock": 25
     },
-    "stock": 30
-  },
-  {
-    "id": 702,
-    "name": "Cooler Master 650W 80+ Bronze PSU",
-    "category": "PSU",
-    "brand": "Cooler Master",
-    "price": 5499,
-    "image": "assets/images/products/psu-650w.png",
-    "specifications": "Wattage: 650W | Efficiency: 80 Plus Bronze | Flat Black Cables",
-    "compatibility": {
-      "psu_wattage": 650
+    {
+        "id": 503,
+        "name": "Samsung 980 PRO 1TB NVMe SSD",
+        "category": "SSD",
+        "brand": "Samsung",
+        "price": 7499,
+        "image": "assets\/images\/products\/ssd-1tb-samsung.png",
+        "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 7000 MB\/s | Thermal Control",
+        "compatibility": [],
+        "stock": 18
     },
-    "stock": 25
-  },
-  {
-    "id": 703,
-    "name": "Corsair RM750e 750W 80+ Gold PSU",
-    "category": "PSU",
-    "brand": "Corsair",
-    "price": 8499,
-    "image": "assets/images/products/psu-750w.png",
-    "specifications": "Wattage: 750W | Efficiency: 80 Plus Gold | Fully Modular | PCIe 5.0 12VHPWR",
-    "compatibility": {
-      "psu_wattage": 750
+    {
+        "id": 504,
+        "name": "Samsung 990 PRO 2TB NVMe SSD",
+        "category": "SSD",
+        "brand": "Samsung",
+        "price": 12999,
+        "image": "assets\/images\/products\/ssd-2tb-samsung.png",
+        "specifications": "Interface: PCIe 4.0 NVMe | Read Speed: 7450 MB\/s | 2TB Capacity",
+        "compatibility": [],
+        "stock": 15
     },
-    "stock": 18
-  },
-  {
-    "id": 704,
-    "name": "Corsair RM850x 850W 80+ Gold Modular PSU",
-    "category": "PSU",
-    "brand": "Corsair",
-    "price": 10999,
-    "image": "assets/images/products/psu-850w.png",
-    "specifications": "Wattage: 850W | Efficiency: 80 Plus Gold | Zero RPM Fan Mode",
-    "compatibility": {
-      "psu_wattage": 850
+    {
+        "id": 601,
+        "name": "Seagate Barracuda 1TB Hard Drive",
+        "category": "HDD",
+        "brand": "Seagate",
+        "price": 3499,
+        "image": "assets\/images\/products\/hdd-1tb.png",
+        "specifications": "Capacity: 1TB | Form Factor: 3.5 Inch | RPM: 7200 | Cache: 64MB",
+        "compatibility": [],
+        "stock": 25
     },
-    "stock": 15
-  },
-  {
-    "id": 801,
-    "name": "KFC Airflow Mid Tower Cabinet",
-    "category": "Cabinet",
-    "brand": "KFC Computers",
-    "price": 3999,
-    "image": "assets/images/products/cabinet-airflow.png",
-    "specifications": "Type: Mid Tower | Tempered Glass Side Panel | Mesh Front Panel | Pre-installed 3x 120mm Fans",
-    "compatibility": {},
-    "stock": 20
-  },
-  {
-    "id": 802,
-    "name": "KFC RGB Gaming Case",
-    "category": "Cabinet",
-    "brand": "KFC Computers",
-    "price": 4999,
-    "image": "assets/images/products/cabinet-rgb.png",
-    "specifications": "Type: Mid Tower | Addressable RGB Lighting Strip | Dual Chamber Layout | Tempered Glass",
-    "compatibility": {},
-    "stock": 18
-  },
-  {
-    "id": 803,
-    "name": "KFC Premium Airflow Case",
-    "category": "Cabinet",
-    "brand": "KFC Computers",
-    "price": 6999,
-    "image": "assets/images/products/cabinet-premium.png",
-    "specifications": "Type: High-Airflow Mid Tower | 4x ARGB PWM Fans included | Type-C Front Port",
-    "compatibility": {},
-    "stock": 15
-  },
-  {
-    "id": 804,
-    "name": "KFC Creator Professional Case",
-    "category": "Cabinet",
-    "brand": "KFC Computers",
-    "price": 7999,
-    "image": "assets/images/products/cabinet-creator.png",
-    "specifications": "Type: Sound-Dampened Full Tower | Aluminum Front Panel | Up to 360mm Radiator Support",
-    "compatibility": {},
-    "stock": 10
-  },
-  {
-    "id": 901,
-    "name": "KFC Stock Air CPU Cooler",
-    "category": "CPU Cooler",
-    "brand": "KFC Computers",
-    "price": 1499,
-    "image": "assets/images/products/cooler-stock.png",
-    "specifications": "Type: Low Profile Air Cooler | 92mm PWM Fan | Aluminum Heatsink",
-    "compatibility": {},
-    "stock": 30
-  },
-  {
-    "id": 902,
-    "name": "DeepCool AG400 Tower Air Cooler",
-    "category": "CPU Cooler",
-    "brand": "DeepCool",
-    "price": 2999,
-    "image": "assets/images/products/cooler-tower.png",
-    "specifications": "Type: Single Tower Air Cooler | 4 Direct Contact Heatpipes | 120mm Hydro Bearing Fan",
-    "compatibility": {},
-    "stock": 22
-  },
-  {
-    "id": 903,
-    "name": "DeepCool AK620 Dual Tower Air Cooler",
-    "category": "CPU Cooler",
-    "brand": "DeepCool",
-    "price": 4499,
-    "image": "assets/images/products/cooler-dual-tower.png",
-    "specifications": "Type: Dual Tower Air Cooler | 6 Heatpipes | 2x 120mm PWM Fans | 260W TDP Rating",
-    "compatibility": {},
-    "stock": 15
-  },
-  {
-    "id": 904,
-    "name": "KFC Frost 240mm AIO Liquid Cooler",
-    "category": "CPU Cooler",
-    "brand": "KFC Computers",
-    "price": 6999,
-    "image": "assets/images/products/cooler-240mm-aio.png",
-    "specifications": "Radiator: 240mm | ARGB Pump & Fans | Braided Sleeved Tubing | Socket AM4/AM5/LGA1700",
-    "compatibility": {},
-    "stock": 12
-  },
-  {
-    "id": 905,
-    "name": "KFC Frost 360mm AIO Liquid Cooler",
-    "category": "CPU Cooler",
-    "brand": "KFC Computers",
-    "price": 9999,
-    "image": "assets/images/products/cooler-360mm-aio.png",
-    "specifications": "Radiator: 360mm | 3x 120mm High Static Pressure ARGB Fans | Copper Base Plate",
-    "compatibility": {},
-    "stock": 10
-  },
-  {
-    "id": 1001,
-    "name": "KFC 22\" FHD 75Hz IPS Monitor",
-    "category": "Monitor",
-    "brand": "KFC Computers",
-    "price": 7999,
-    "image": "assets/images/products/monitor-22.png",
-    "specifications": "Screen Size: 21.5 Inch | Resolution: 1920x1080 Full HD | Refresh Rate: 75Hz | Panel: IPS",
-    "compatibility": {},
-    "stock": 20
-  },
-  {
-    "id": 1002,
-    "name": "KFC 24\" FHD 100Hz Frameless Monitor",
-    "category": "Monitor",
-    "brand": "KFC Computers",
-    "price": 9999,
-    "image": "assets/images/products/monitor-24-100hz.png",
-    "specifications": "Screen Size: 23.8 Inch | Resolution: Full HD 1080p | Refresh Rate: 100Hz | EyeCare Tech",
-    "compatibility": {},
-    "stock": 18
-  },
-  {
-    "id": 1003,
-    "name": "KFC 24\" Gaming 165Hz 1ms Monitor",
-    "category": "Monitor",
-    "brand": "KFC Computers",
-    "price": 12999,
-    "image": "assets/images/products/monitor-24-165hz.png",
-    "specifications": "Screen Size: 24 Inch | Resolution: 1080p | Refresh Rate: 165Hz | Response Time: 1ms | FreeSync",
-    "compatibility": {},
-    "stock": 15
-  },
-  {
-    "id": 1004,
-    "name": "KFC 27\" QHD 165Hz Curved Gaming Monitor",
-    "category": "Monitor",
-    "brand": "KFC Computers",
-    "price": 19999,
-    "image": "assets/images/products/monitor-27-qhd.png",
-    "specifications": "Screen Size: 27 Inch | Resolution: 2560x1440 QHD 2K | Refresh Rate: 165Hz | 1500R Curve | HDR400",
-    "compatibility": {},
-    "stock": 12
-  },
-  {
-    "id": 1101,
-    "name": "KFC Mechanical Gaming Keyboard",
-    "category": "Keyboard",
-    "brand": "KFC Computers",
-    "price": 2499,
-    "image": "assets/images/products/keyboard-mechanical.png",
-    "specifications": "Switches: Blue Tactile Mechanical | Backlight: Rainbow LED | Keys: 104 Anti-Ghosting",
-    "compatibility": {},
-    "stock": 35
-  },
-  {
-    "id": 1102,
-    "name": "KFC RGB Mechanical Gaming Keyboard",
-    "category": "Keyboard",
-    "brand": "KFC Computers",
-    "price": 3499,
-    "image": "assets/images/products/keyboard-rgb-mech.png",
-    "specifications": "Switches: Red Linear Mechanical | Backlight: Per-key RGB | Wrist Rest | Braided Cable",
-    "compatibility": {},
-    "stock": 25
-  },
-  {
-    "id": 1103,
-    "name": "KFC Wireless Mechanical Keyboard",
-    "category": "Keyboard",
-    "brand": "KFC Computers",
-    "price": 4999,
-    "image": "assets/images/products/keyboard-mechanical.png",
-    "specifications": "Dual Mode 2.4GHz & Bluetooth 5.0 | Hot-swappable Switches | 4000mAh Battery",
-    "compatibility": {},
-    "stock": 20
-  },
-  {
-    "id": 1104,
-    "name": "Corsair K70 RGB PRO Mechanical Keyboard",
-    "category": "Keyboard",
-    "brand": "Corsair",
-    "price": 11999,
-    "image": "assets/images/products/keyboard-rgb-mech.png",
-    "specifications": "CHERRY MX Speed Switches | AXON Hyper-Processing 8000Hz | Aluminum Frame",
-    "compatibility": {},
-    "stock": 10
-  },
-  {
-    "id": 1201,
-    "name": "KFC Ergonomic Gaming Mouse",
-    "category": "Mouse",
-    "brand": "KFC Computers",
-    "price": 999,
-    "image": "assets/images/products/mouse-gaming.png",
-    "specifications": "DPI: Up to 6400 DPI | Buttons: 6 Programmable | Sensor: Optical Gaming Sensor",
-    "compatibility": {},
-    "stock": 40
-  },
-  {
-    "id": 1202,
-    "name": "KFC Pro RGB Lightweight Gaming Mouse",
-    "category": "Mouse",
-    "brand": "KFC Computers",
-    "price": 1499,
-    "image": "assets/images/products/mouse-rgb.png",
-    "specifications": "Weight: 65g Ultra-Lightweight | DPI: 12800 DPI | RGB Lighting | Paracord Cable",
-    "compatibility": {},
-    "stock": 30
-  },
-  {
-    "id": 1203,
-    "name": "KFC Wireless Pro RGB Gaming Mouse",
-    "category": "Mouse",
-    "brand": "KFC Computers",
-    "price": 2999,
-    "image": "assets/images/products/mouse-rgb.png",
-    "specifications": "Wireless 2.4GHz Lag-free | 16000 DPI Sensor | 70 Hours Battery Life",
-    "compatibility": {},
-    "stock": 18
-  },
-  {
-    "id": 1204,
-    "name": "Logitech G502 HERO Gaming Mouse",
-    "category": "Mouse",
-    "brand": "Logitech",
-    "price": 3999,
-    "image": "assets/images/products/mouse-gaming.png",
-    "specifications": "HERO 25K Sensor | 11 Programmable Buttons | Adjustable Weights (5x 3.6g)",
-    "compatibility": {},
-    "stock": 25
-  }
+    {
+        "id": 602,
+        "name": "WD Blue 2TB Hard Drive",
+        "category": "HDD",
+        "brand": "Western Digital",
+        "price": 5499,
+        "image": "assets\/images\/products\/hdd-2tb.png",
+        "specifications": "Capacity: 2TB | Form Factor: 3.5 Inch | RPM: 5400 | SATA 6Gb\/s",
+        "compatibility": [],
+        "stock": 20
+    },
+    {
+        "id": 603,
+        "name": "Seagate Barracuda 4TB Hard Drive",
+        "category": "HDD",
+        "brand": "Seagate",
+        "price": 8999,
+        "image": "assets\/images\/products\/hdd-4tb.png",
+        "specifications": "Capacity: 4TB | Form Factor: 3.5 Inch | RPM: 5400 | Mass Storage",
+        "compatibility": [],
+        "stock": 14
+    },
+    {
+        "id": 604,
+        "name": "WD Purple 4TB Surveillance HDD",
+        "category": "HDD",
+        "brand": "Western Digital",
+        "price": 9499,
+        "image": "assets\/images\/products\/hdd-4tb.png",
+        "specifications": "Capacity: 4TB | 24x7 Continuous Operation | AllFrame Technology",
+        "compatibility": [],
+        "stock": 10
+    },
+    {
+        "id": 701,
+        "name": "KFC Power 550W 80+ Bronze PSU",
+        "category": "PSU",
+        "brand": "KFC Computers",
+        "price": 4499,
+        "image": "assets\/images\/products\/psu-550w.png",
+        "specifications": "Wattage: 550W | Efficiency: 80 Plus Bronze | Fan: 120mm Silent",
+        "compatibility": {
+            "psu_wattage": 550
+        },
+        "stock": 30
+    },
+    {
+        "id": 702,
+        "name": "Cooler Master 650W 80+ Bronze PSU",
+        "category": "PSU",
+        "brand": "Cooler Master",
+        "price": 5499,
+        "image": "assets\/images\/products\/psu-650w.png",
+        "specifications": "Wattage: 650W | Efficiency: 80 Plus Bronze | Flat Black Cables",
+        "compatibility": {
+            "psu_wattage": 650
+        },
+        "stock": 25
+    },
+    {
+        "id": 703,
+        "name": "Corsair RM750e 750W 80+ Gold PSU",
+        "category": "PSU",
+        "brand": "Corsair",
+        "price": 8499,
+        "image": "assets\/images\/products\/psu-750w.png",
+        "specifications": "Wattage: 750W | Efficiency: 80 Plus Gold | Fully Modular | PCIe 5.0 12VHPWR",
+        "compatibility": {
+            "psu_wattage": 750
+        },
+        "stock": 18
+    },
+    {
+        "id": 704,
+        "name": "Corsair RM850x 850W 80+ Gold Modular PSU",
+        "category": "PSU",
+        "brand": "Corsair",
+        "price": 10999,
+        "image": "assets\/images\/products\/psu-850w.png",
+        "specifications": "Wattage: 850W | Efficiency: 80 Plus Gold | Zero RPM Fan Mode",
+        "compatibility": {
+            "psu_wattage": 850
+        },
+        "stock": 15
+    },
+    {
+        "id": 801,
+        "name": "KFC Airflow Mid Tower Cabinet",
+        "category": "Cabinet",
+        "brand": "KFC Computers",
+        "price": 3999,
+        "image": "assets\/images\/products\/cabinet-airflow.png",
+        "specifications": "Type: Mid Tower | Tempered Glass Side Panel | Mesh Front Panel | Pre-installed 3x 120mm Fans",
+        "compatibility": [],
+        "stock": 20
+    },
+    {
+        "id": 802,
+        "name": "KFC RGB Gaming Case",
+        "category": "Cabinet",
+        "brand": "KFC Computers",
+        "price": 4999,
+        "image": "assets\/images\/products\/cabinet-rgb.png",
+        "specifications": "Type: Mid Tower | Addressable RGB Lighting Strip | Dual Chamber Layout | Tempered Glass",
+        "compatibility": [],
+        "stock": 18
+    },
+    {
+        "id": 803,
+        "name": "KFC Premium Airflow Case",
+        "category": "Cabinet",
+        "brand": "KFC Computers",
+        "price": 6999,
+        "image": "assets\/images\/products\/cabinet-premium.png",
+        "specifications": "Type: High-Airflow Mid Tower | 4x ARGB PWM Fans included | Type-C Front Port",
+        "compatibility": [],
+        "stock": 15
+    },
+    {
+        "id": 804,
+        "name": "KFC Creator Professional Case",
+        "category": "Cabinet",
+        "brand": "KFC Computers",
+        "price": 7999,
+        "image": "assets\/images\/products\/cabinet-creator.png",
+        "specifications": "Type: Sound-Dampened Full Tower | Aluminum Front Panel | Up to 360mm Radiator Support",
+        "compatibility": [],
+        "stock": 10
+    },
+    {
+        "id": 901,
+        "name": "KFC Stock Air CPU Cooler",
+        "category": "CPU Cooler",
+        "brand": "KFC Computers",
+        "price": 1499,
+        "image": "assets\/images\/products\/cooler-stock.png",
+        "specifications": "Type: Low Profile Air Cooler | 92mm PWM Fan | Aluminum Heatsink",
+        "compatibility": [],
+        "stock": 30
+    },
+    {
+        "id": 902,
+        "name": "DeepCool AG400 Tower Air Cooler",
+        "category": "CPU Cooler",
+        "brand": "DeepCool",
+        "price": 2999,
+        "image": "assets\/images\/products\/cooler-tower.png",
+        "specifications": "Type: Single Tower Air Cooler | 4 Direct Contact Heatpipes | 120mm Hydro Bearing Fan",
+        "compatibility": [],
+        "stock": 22
+    },
+    {
+        "id": 903,
+        "name": "DeepCool AK620 Dual Tower Air Cooler",
+        "category": "CPU Cooler",
+        "brand": "DeepCool",
+        "price": 4499,
+        "image": "assets\/images\/products\/cooler-dual-tower.png",
+        "specifications": "Type: Dual Tower Air Cooler | 6 Heatpipes | 2x 120mm PWM Fans | 260W TDP Rating",
+        "compatibility": [],
+        "stock": 15
+    },
+    {
+        "id": 904,
+        "name": "KFC Frost 240mm AIO Liquid Cooler",
+        "category": "CPU Cooler",
+        "brand": "KFC Computers",
+        "price": 6999,
+        "image": "assets\/images\/products\/cooler-240mm-aio.png",
+        "specifications": "Radiator: 240mm | ARGB Pump & Fans | Braided Sleeved Tubing | Socket AM4\/AM5\/LGA1700",
+        "compatibility": [],
+        "stock": 12
+    },
+    {
+        "id": 905,
+        "name": "KFC Frost 360mm AIO Liquid Cooler",
+        "category": "CPU Cooler",
+        "brand": "KFC Computers",
+        "price": 9999,
+        "image": "assets\/images\/products\/cooler-360mm-aio.png",
+        "specifications": "Radiator: 360mm | 3x 120mm High Static Pressure ARGB Fans | Copper Base Plate",
+        "compatibility": [],
+        "stock": 10
+    },
+    {
+        "id": 1001,
+        "name": "KFC 22\" FHD 75Hz IPS Monitor",
+        "category": "Monitor",
+        "brand": "KFC Computers",
+        "price": 7999,
+        "image": "assets\/images\/products\/monitor-22.png",
+        "specifications": "Screen Size: 21.5 Inch | Resolution: 1920x1080 Full HD | Refresh Rate: 75Hz | Panel: IPS",
+        "compatibility": [],
+        "stock": 20
+    },
+    {
+        "id": 1002,
+        "name": "KFC 24\" FHD 100Hz Frameless Monitor",
+        "category": "Monitor",
+        "brand": "KFC Computers",
+        "price": 9999,
+        "image": "assets\/images\/products\/monitor-24-100hz.png",
+        "specifications": "Screen Size: 23.8 Inch | Resolution: Full HD 1080p | Refresh Rate: 100Hz | EyeCare Tech",
+        "compatibility": [],
+        "stock": 18
+    },
+    {
+        "id": 1003,
+        "name": "KFC 24\" Gaming 165Hz 1ms Monitor",
+        "category": "Monitor",
+        "brand": "KFC Computers",
+        "price": 12999,
+        "image": "assets\/images\/products\/monitor-24-165hz.png",
+        "specifications": "Screen Size: 24 Inch | Resolution: 1080p | Refresh Rate: 165Hz | Response Time: 1ms | FreeSync",
+        "compatibility": [],
+        "stock": 15
+    },
+    {
+        "id": 1004,
+        "name": "KFC 27\" QHD 165Hz Curved Gaming Monitor",
+        "category": "Monitor",
+        "brand": "KFC Computers",
+        "price": 19999,
+        "image": "assets\/images\/products\/monitor-27-qhd.png",
+        "specifications": "Screen Size: 27 Inch | Resolution: 2560x1440 QHD 2K | Refresh Rate: 165Hz | 1500R Curve | HDR400",
+        "compatibility": [],
+        "stock": 12
+    },
+    {
+        "id": 1101,
+        "name": "KFC Mechanical Gaming Keyboard",
+        "category": "Keyboard",
+        "brand": "KFC Computers",
+        "price": 2499,
+        "image": "assets\/images\/products\/keyboard-mechanical.png",
+        "specifications": "Switches: Blue Tactile Mechanical | Backlight: Rainbow LED | Keys: 104 Anti-Ghosting",
+        "compatibility": [],
+        "stock": 35
+    },
+    {
+        "id": 1102,
+        "name": "KFC RGB Mechanical Gaming Keyboard",
+        "category": "Keyboard",
+        "brand": "KFC Computers",
+        "price": 3499,
+        "image": "assets\/images\/products\/keyboard-rgb-mech.png",
+        "specifications": "Switches: Red Linear Mechanical | Backlight: Per-key RGB | Wrist Rest | Braided Cable",
+        "compatibility": [],
+        "stock": 25
+    },
+    {
+        "id": 1103,
+        "name": "KFC Wireless Mechanical Keyboard",
+        "category": "Keyboard",
+        "brand": "KFC Computers",
+        "price": 4999,
+        "image": "assets\/images\/products\/keyboard-mechanical.png",
+        "specifications": "Dual Mode 2.4GHz & Bluetooth 5.0 | Hot-swappable Switches | 4000mAh Battery",
+        "compatibility": [],
+        "stock": 20
+    },
+    {
+        "id": 1104,
+        "name": "Corsair K70 RGB PRO Mechanical Keyboard",
+        "category": "Keyboard",
+        "brand": "Corsair",
+        "price": 11999,
+        "image": "assets\/images\/products\/keyboard-rgb-mech.png",
+        "specifications": "CHERRY MX Speed Switches | AXON Hyper-Processing 8000Hz | Aluminum Frame",
+        "compatibility": [],
+        "stock": 10
+    },
+    {
+        "id": 1201,
+        "name": "KFC Ergonomic Gaming Mouse",
+        "category": "Mouse",
+        "brand": "KFC Computers",
+        "price": 999,
+        "image": "assets\/images\/products\/mouse-gaming.png",
+        "specifications": "DPI: Up to 6400 DPI | Buttons: 6 Programmable | Sensor: Optical Gaming Sensor",
+        "compatibility": [],
+        "stock": 40
+    },
+    {
+        "id": 1202,
+        "name": "KFC Pro RGB Lightweight Gaming Mouse",
+        "category": "Mouse",
+        "brand": "KFC Computers",
+        "price": 1499,
+        "image": "assets\/images\/products\/mouse-rgb.png",
+        "specifications": "Weight: 65g Ultra-Lightweight | DPI: 12800 DPI | RGB Lighting | Paracord Cable",
+        "compatibility": [],
+        "stock": 30
+    },
+    {
+        "id": 1203,
+        "name": "KFC Wireless Pro RGB Gaming Mouse",
+        "category": "Mouse",
+        "brand": "KFC Computers",
+        "price": 2999,
+        "image": "assets\/images\/products\/mouse-rgb.png",
+        "specifications": "Wireless 2.4GHz Lag-free | 16000 DPI Sensor | 70 Hours Battery Life",
+        "compatibility": [],
+        "stock": 18
+    },
+    {
+        "id": 1204,
+        "name": "Logitech G502 HERO Gaming Mouse",
+        "category": "Mouse",
+        "brand": "Logitech",
+        "price": 3999,
+        "image": "assets\/images\/products\/mouse-gaming.png",
+        "specifications": "HERO 25K Sensor | 11 Programmable Buttons | Adjustable Weights (5x 3.6g)",
+        "compatibility": [],
+        "stock": 25
+    },
+    {
+        "id": 1205,
+        "name": "Silver AMD Ryzen 5 4500 CPU Processor",
+        "category": "CPU",
+        "brand": "ryon",
+        "price": 4500,
+        "image": "assets\/images\/products\/product_1788243474_826.png",
+        "specifications": "",
+        "compatibility": {
+            "socket": "AM4",
+            "ram_type": "DDR5",
+            "wattage": 80,
+            "psu_wattage": 550
+        },
+        "stock": 10
+    }
 ]

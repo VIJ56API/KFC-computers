@@ -24,7 +24,10 @@ function saveCart(cart) {
 }
 
 // Add item to cart
-function addToCart(item, qty = 1) {
+function addToCart(item, qty = 1, btnElement = null) {
+    if (window.event) {
+        window.event.stopPropagation();
+    }
     let cart = getCart();
     const existingIndex = cart.findIndex(c => c.id === item.id);
     if (existingIndex > -1) {
@@ -35,6 +38,25 @@ function addToCart(item, qty = 1) {
     }
     saveCart(cart);
     showToast(`Added ${item.name} to Cart!`);
+
+    if (btnElement) {
+        const originalHtml = btnElement.innerHTML;
+        const hadPrimary = btnElement.classList.contains('btn-primary');
+        const hadSecondary = btnElement.classList.contains('btn-secondary');
+        
+        btnElement.innerHTML = `<i class="fa-solid fa-check"></i> Added!`;
+        btnElement.classList.remove('btn-primary', 'btn-secondary');
+        btnElement.classList.add('btn-success');
+        btnElement.disabled = true;
+
+        setTimeout(() => {
+            btnElement.innerHTML = originalHtml;
+            btnElement.classList.remove('btn-success');
+            if (hadPrimary) btnElement.classList.add('btn-primary');
+            if (hadSecondary) btnElement.classList.add('btn-secondary');
+            btnElement.disabled = false;
+        }, 1200);
+    }
 }
 
 // Remove item from cart

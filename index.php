@@ -117,8 +117,8 @@ $featuredComponents = array_slice($components, 0, 8);
                   "price" => $p["price"],
                   "image" => $p["image"],
                   "category" => $p["category"]
-                ]) ?>)'>
-                  <i class="fa-solid fa-cart-plus"></i> Add
+                ]) ?>, 1, this)'>
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
                 </button>
               </div>
             </div>
@@ -164,8 +164,8 @@ $featuredComponents = array_slice($components, 0, 8);
                   "price" => $c["price"],
                   "image" => $c["image"],
                   "category" => $c["category"]
-                ]) ?>)'>
-                  <i class="fa-solid fa-cart-plus"></i> Add
+                ]) ?>, 1, this)'>
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
                 </button>
               </div>
             </div>

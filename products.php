@@ -125,8 +125,8 @@ $allBrands = [
                       "price" => $item["price"],
                       "image" => $item["image"],
                       "category" => $item["category"]
-                    ]) ?>)'>
-                      <i class="fa-solid fa-cart-plus"></i> Add
+                    ]) ?>, 1, this)'>
+                      <i class="fa-solid fa-cart-plus"></i> Add to Cart
                     </button>
                   </div>
                 </div>

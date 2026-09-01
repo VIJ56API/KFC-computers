@@ -31,16 +31,19 @@ $items = $stmtItems->fetchAll();
       Your order <strong style="color: var(--primary-blue);"><?= htmlspecialchars($order['order_number']) ?></strong> has been confirmed and sent to our build technicians.
     </p>
 
-    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.8rem;">
+    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.8rem; flex-wrap: wrap;">
       <button onclick="window.print()" class="btn btn-outline btn-sm">
         <i class="fa-solid fa-print"></i> Print Invoice
+      </button>
+      <button onclick="scrollToEmailInvoice()" class="btn btn-secondary btn-sm">
+        <i class="fa-solid fa-envelope"></i> Email Invoice
       </button>
       <a href="index.php" class="btn btn-primary btn-sm">Continue Shopping</a>
     </div>
   </div>
 
   <!-- Invoice Breakdown Card -->
-  <div style="background: var(--bg-card); border: 2px solid #cbd5e1; border-radius: var(--radius); padding: 2rem; margin-bottom: 3rem; box-shadow: var(--shadow-card);">
+  <div style="background: var(--bg-card); border: 2px solid #cbd5e1; border-radius: var(--radius); padding: 2rem; margin-bottom: 2rem; box-shadow: var(--shadow-card);">
     <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #e2e8f0; padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
       <div>
         <div class="logo" style="font-size: 1.4rem;">KFC <span>COMPUTERS</span></div>
@@ -106,6 +109,89 @@ $items = $stmtItems->fetchAll();
       </div>
     </div>
   </div>
+
+  <!-- Direct Email Invoice Section -->
+  <div id="email-invoice-card" style="background: var(--bg-card); border: 2px solid var(--primary-blue); border-radius: var(--radius); padding: 2rem; margin-bottom: 3rem; box-shadow: var(--shadow-card);">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+      <div style="width: 46px; height: 46px; background: #e0f2fe; border: 1.5px solid var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <i class="fa-solid fa-paper-plane" style="font-size: 1.2rem; color: var(--primary-blue);"></i>
+      </div>
+      <div>
+        <h3 style="font-size: 1.25rem; color: #000000; font-weight: 900; margin: 0;">Send Tax Invoice Directly to Email</h3>
+        <p style="color: #000000; font-size: 0.9rem; font-weight: 600; margin: 2px 0 0 0;">Enter your email address to send a copy of your tax invoice and order receipt.</p>
+      </div>
+    </div>
+
+    <div id="invoice-email-status" style="display: none; padding: 0.8rem 1rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem;"></div>
+
+    <form id="email-invoice-form" onsubmit="sendInvoiceEmail(event, <?= (int)$order['id'] ?>)" style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+      <input type="email" id="invoice-email-input" class="form-control" style="flex: 1; min-width: 250px;" value="<?= htmlspecialchars($order['email']) ?>" placeholder="e.g. customer@example.com" required>
+      <button type="submit" id="send-invoice-btn" class="btn btn-primary" style="padding: 0.75rem 1.6rem;">
+        <i class="fa-solid fa-envelope-circle-check"></i> Send Invoice to Email
+      </button>
+    </form>
+  </div>
 </div>
+
+<script>
+function scrollToEmailInvoice() {
+  const el = document.getElementById('email-invoice-card');
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+function sendInvoiceEmail(e, orderId) {
+  e.preventDefault();
+  const btn = document.getElementById('send-invoice-btn');
+  const input = document.getElementById('invoice-email-input');
+  const status = document.getElementById('invoice-email-status');
+
+  const emailVal = input.value.trim();
+  if (!emailVal) return;
+
+  const originalHtml = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Sending...`;
+  status.style.display = 'none';
+
+  const formData = new FormData();
+  formData.append('order_id', orderId);
+  formData.append('email', emailVal);
+
+  fetch('send-invoice.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.json())
+  .then(data => {
+    btn.disabled = false;
+    btn.innerHTML = originalHtml;
+    status.style.display = 'block';
+
+    if (data.success) {
+      status.style.background = '#dcfce7';
+      status.style.border = '2px solid var(--accent-green)';
+      status.style.color = '#14532d';
+      status.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${data.message}`;
+      if (typeof showToast === 'function') {
+        showToast(`Invoice sent to ${emailVal}`);
+      }
+    } else {
+      status.style.background = '#fee2e2';
+      status.style.border = '2px solid var(--accent-red)';
+      status.style.color = '#7f1d1d';
+      status.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> ${data.message || 'Failed to send invoice.'}`;
+    }
+  })
+  .catch(err => {
+    btn.disabled = false;
+    btn.innerHTML = originalHtml;
+    status.style.display = 'block';
+    status.style.background = '#fee2e2';
+    status.style.border = '2px solid var(--accent-red)';
+    status.style.color = '#7f1d1d';
+    status.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> An error occurred while sending the email.`;
+  });
+}
+</script>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

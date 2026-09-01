@@ -64,8 +64,8 @@ $relatedItems = array_slice($relatedItems, 0, 4);
           "price" => $product["price"],
           "image" => $product["image"],
           "category" => $product["category"]
-        ]) ?>, parseInt(document.getElementById("detail-qty").value))'>
-          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        ]) ?>, parseInt(document.getElementById("detail-qty").value), this)'>
+          <i class="fa-solid fa-cart-shopping"></i> Add to Cart
         </button>
       </div>
 
